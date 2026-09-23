@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Android_16_%7C_Snapdragon_6_Gen_4-green.svg)](hardware/device_baseline.json)
-[![Status](https://img.shields.io/badge/Status-Research_Milestone_v0.3-blue.svg)](CHANGELOG.md)
+[![Status](https://img.shields.io/badge/Status-Research_Milestone_v0.3--R1-blue.svg)](CHANGELOG.md)
 
 > [!IMPORTANT]
 > **Scientific Disclaimer**: Measured results are device-, runtime-, workload-, and implementation-specific. Targets are not achieved results. The current 2,093-parameter model is a **control baseline**, not evidence that 2K parameters are sufficient for general mobile agency.
@@ -84,14 +84,19 @@ By replacing the artificial polling timer and host CLI invocation with in-proces
 
 ### Model Leaderboard
 | Version | Model | Parameters | Precision | Accuracy | Macro F1 | ECE | Model P50 | Model P95 | Peak RSS | Energy / Inf |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `v0.1` | MobiMind-S1-v0 (Control) | 2,093 | FP32 | 100.0%* | 1.00 | 0.030 | **1.30 µs** | 1.35 µs | 34.8 MB | 0.02 mJ |
-| `v0.3` | mobimind_hybrid_10m | 9,731,600 | FP32 | 92.4% | 0.92 | 0.025 | **9.15 ms** | 10.07 ms | 68.0 MB | 1.10 mJ |
-| `v0.3` | **mobimind_hybrid_25m (Recommended)** | **24,536,016** | **FP32** | **96.3%** | **0.96** | **0.031** | **22.40 ms** | **24.64 ms** | **124.0 MB** | **2.69 mJ** |
-| `v0.3` | mobilebert_25m | 24,864,856 | FP32 | 95.9% | 0.96 | 0.031 | 26.80 ms | 29.48 ms | 132.0 MB | 3.22 mJ |
-| `v0.3` | standard_transformer_25m | 25,213,456 | FP32 | 95.7% | 0.96 | 0.029 | 28.27 ms | 31.10 ms | 145.0 MB | 3.39 mJ |
-| `v0.3` | albert_25m | 24,849,936 | FP32 | 92.4% | 0.92 | 0.031 | 34.20 ms | 37.62 ms | 115.0 MB | 4.10 mJ |
-| `v0.3` | mobimind_hybrid_50m | 55,992,976 | FP32 | 99.9% | 1.00 | 0.044 | 44.90 ms | 49.39 ms | 228.0 MB | 5.39 mJ |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 0.1 | MobiMind-S1-v0 (Control) | 2,093 | FP32 | 100.0%* | 1.000 | 0.030 | **1.30 µs** | 1.35 µs | 34.8 MB | UNKNOWN |
+| 0.3-R1 | **mobilebert_10m (Fastest 10M)** | **11,055,184** | **FP32** | **30.0%** | **0.086** | **0.861** | **29.34 ms** | **30.48 ms** | **16.4 MB** | **UNKNOWN** |
+| 0.3-R1 | mobimind_hybrid_10m | 9,731,600 | FP32 | 30.0% | 0.086 | 0.667 | **36.80 ms** | 39.18 ms | 12.6 MB | UNKNOWN |
+| 0.3-R1 | standard_transformer_10m | 10,511,888 | FP32 | 50.0% | 0.152 | 0.666 | **41.07 ms** | 44.26 ms | 13.4 MB | UNKNOWN |
+| 0.3-R1 | **mobimind_hybrid_25m** | **24,536,016** | **FP32** | **50.0%** | **0.152** | **0.552** | **199.60 ms** | **203.38 ms** | **22.7 MB** | **UNKNOWN** |
+| 0.3-R1 | standard_transformer_25m | 25,213,456 | FP32 | 30.0% | 0.086 | 0.789 | **148.07 ms** | 156.29 ms | 23.5 MB | UNKNOWN |
+| 0.3-R1 | mobilebert_25m | 24,864,856 | FP32 | 40.0% | 0.143 | 0.753 | **264.93 ms** | 285.26 ms | 30.3 MB | UNKNOWN |
+| 0.3-R1 | albert_10m | 10,786,064 | FP32 | 50.0% | 0.143 | 0.684 | **646.52 ms** | 673.74 ms | 42.4 MB | UNKNOWN |
+| 0.3-R1 | albert_25m | 24,849,936 | FP32 | 40.0% | 0.133 | 0.752 | **4,302.67 ms**| 4,545.45 ms| 91.3 MB | UNKNOWN |
+| 0.3-R1 | albert_50m | 46,886,928 | FP32 | 30.0% | 0.071 | 0.682 | **18,405.41 ms**| 20,465.44 ms| 175.1 MB | UNKNOWN |
+
+*Note: Initial v0.3 metrics were audited and quarantined under E013 due to synthetic calculations. v0.3-R1 reports 100% empirical measurements from physical Snapdragon 6 Gen 4 CPU execution.*
 
 ### Agent Leaderboard
 | Version | Strategy | Decision Latency | Action Latency | Verification Latency | **True E2E** | Useful Action Rate | False Action Rate |

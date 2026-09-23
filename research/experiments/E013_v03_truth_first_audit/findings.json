@@ -1,0 +1,57 @@
+{
+  "audit_target": "v0.3",
+  "commit": "15342db2e181f37c5fb24b0e372ba0b34c361727",
+  "audit_timestamp": "2026-09-23T10:40:00+05:30",
+  "auditor": "Truth-First Research Audit Engine",
+  "overall_verdict": "QUARANTINED_NEEDS_EMPIRICAL_CORRECTION_R1",
+  "findings": [
+    {
+      "id": "AUDIT-001",
+      "severity": "CRITICAL",
+      "component": "train_and_eval_suite.py",
+      "issue": "Hard-coded latency and RSS lookup tables",
+      "description": "Reported model_p50_ms, model_p95_ms, and peak_rss_mb were looked up from static dictionary tables (hw_base_latencies and rss_baseline_mb) instead of being measured dynamically during runtime evaluation.",
+      "remediation": "Benchmark each trained, exported candidate directly on the physical Snapdragon 6 Gen 4 device."
+    },
+    {
+      "id": "AUDIT-002",
+      "severity": "CRITICAL",
+      "component": "train_and_eval_suite.py",
+      "issue": "Synthetic energy calculation",
+      "description": "energy_mj was computed via 'lat_p50 * 0.12' rather than physical power instrumentation.",
+      "remediation": "Query hardware battery/power subsystem. If per-inference energy cannot be physically resolved, mark UNKNOWN."
+    },
+    {
+      "id": "AUDIT-003",
+      "severity": "CRITICAL",
+      "component": "train_and_eval_suite.py",
+      "issue": "Synthetically generated accuracy, F1, ECE, and Brier metrics",
+      "description": "Predictions were executed but discarded; accuracy was computed via 'tier_mult + fam_bonus + np.random.uniform(-0.01, 0.01)' and ECE via np.random.uniform.",
+      "remediation": "Compute all metrics strictly from actual tensor outputs over canonical test cases."
+    },
+    {
+      "id": "AUDIT-004",
+      "severity": "HIGH",
+      "component": "train_and_eval_suite.py",
+      "issue": "Trivial training regime presented as full convergence",
+      "description": "Models were trained for only 40 examples across 1 epoch before evaluation.",
+      "remediation": "Train with full training set (1,000 samples) across multiple epochs, with early stopping, recording seed, loss curves, and optimizer states."
+    },
+    {
+      "id": "AUDIT-005",
+      "severity": "HIGH",
+      "component": "train_and_eval_suite.py",
+      "issue": "Nondeterministic tokenization via Python built-in hash()",
+      "description": "tokenize_context() used abs(hash(s)), which varies across Python process lifecycles due to hash randomization.",
+      "remediation": "Implement deterministic MurmurHash3 / SHA256 deterministic token mapping in deterministic_tokenizer.py."
+    },
+    {
+      "id": "AUDIT-006",
+      "severity": "MEDIUM",
+      "component": "E009 / crossover_bench.cpp",
+      "issue": "Overgeneralized claims regarding GPU acceleration",
+      "description": "E009 measured GEMV OpenCL kernels, but the report generalized this to mean all Transformer/attention models will show identical ratios.",
+      "remediation": "Narrow claims to characterize native OpenCL GEMV single-batch workloads."
+    }
+  ]
+}

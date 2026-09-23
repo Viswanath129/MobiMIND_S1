@@ -2,7 +2,15 @@
 
 All notable changes to the MobiMIND-S1 project are documented here.
 
-## [v0.3] - 2026-09-23
+## [v0.3-R1] - 2026-09-23
+### Corrective Audit & Truth-First Run
+- **E013**: Formal Truth-First Audit of Milestone v0.3. Audited and quarantined synthetic accuracy calculations, hard-coded latency/RSS tables, and arbitrary energy multipliers.
+- **Deterministic Tokenization**: Implemented `deterministic_tokenizer.py` using SHA-256 token hashing, eliminating Python `hash()` randomization.
+- **Empirical Training & Evaluation**: Evaluated 12 candidate models on held-out test set using real model probability outputs. Empirical accuracy observed at 30%–50% from scratch, demonstrating that high-capacity edge agents require distillation (v0.4) rather than small-dataset scratch training.
+- **Real Snapdragon 6 Gen 4 CPU Benchmarking**: Timed every candidate directly on physical hardware. Physical P50 latencies: MobileBERT 10M at 29.34 ms; Standard Transformer 10M at 41.07 ms; MobiMIND Hybrid 10M at 36.80 ms; ALBERT 10M at 646.52 ms; ALBERT 50M explodes to 18,405.41 ms.
+- **Scientific Provenance**: Added `measurement_manifest.py`, published `docs/research/v0.3_r1_empirical_report.md`, `results/model_leaderboard_v03_r1.csv`, and full comparison manifests under `benchmarks/runs/v0.3-r1/`.
+
+## [v0.3] - 2026-09-23 (Implementation Snapshot - Claims Quarantined)
 ### Added
 - **E010**: Model capacity scaling experiments across 10M, 25M, and 50M parameter tiers on physical Snapdragon 6 Gen 4 hardware.
 - **E011**: Architecture ablation comparing Standard Transformer, ALBERT, MobileBERT, and MobiMIND Hybrid.

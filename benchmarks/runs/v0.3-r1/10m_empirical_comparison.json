@@ -1,0 +1,378 @@
+{
+  "tier": "10m",
+  "provenance": "TRUTH_FIRST_EMPIRICAL",
+  "models": [
+    {
+      "model_id": "standard_transformer_10m",
+      "family": "standard_transformer",
+      "tier": "10m",
+      "parameters": {
+        "value": 10511888,
+        "provenance": "MEASURED",
+        "source": "exact_parameter_count"
+      },
+      "precision": "FP32",
+      "training": {
+        "epochs": 4,
+        "batch_size": 32,
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 0.01,
+        "seed": 42,
+        "duration_seconds": 0.0,
+        "val_loss": 0.002,
+        "checkpoint_hash": "706ed8c717bb8057180c4ae8d9b800a871b349bde87cdd67ab570ff00a28f966"
+      },
+      "accuracy": {
+        "value": 0.5,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "intent_accuracy": {
+        "value": 0.5,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "macro_f1": {
+        "value": 0.15151515151515152,
+        "provenance": "DERIVED",
+        "source": "macro_averaged_f1"
+      },
+      "ece": {
+        "value": 0.6661655485630036,
+        "provenance": "DERIVED",
+        "source": "10_bin_exact_ece"
+      },
+      "brier_score": {
+        "value": 0.6417032641795327,
+        "provenance": "DERIVED",
+        "source": "mean_squared_prob_error"
+      },
+      "useful_action_rate": {
+        "value": 0.2,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "false_action_rate": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "unsafe_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "model_p50_ms": {
+        "value": 41.074,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "model_p95_ms": {
+        "value": 44.263,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "model_p99_ms": {
+        "value": 53.232,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "cold_start_ms": {
+        "value": 28.703,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cold_pass"
+      },
+      "peak_rss_mb": {
+        "value": 13.42,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_getrusage"
+      },
+      "energy_mj": {
+        "value": null,
+        "provenance": "UNKNOWN",
+        "source": "battery_sysfs_permission_denied",
+        "notes": "Microampere power rails restricted on unrooted Android 16"
+      }
+    },
+    {
+      "model_id": "albert_10m",
+      "family": "albert",
+      "tier": "10m",
+      "parameters": {
+        "value": 10786064,
+        "provenance": "MEASURED",
+        "source": "exact_parameter_count"
+      },
+      "precision": "FP32",
+      "training": {
+        "epochs": 4,
+        "batch_size": 32,
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 0.01,
+        "seed": 42,
+        "duration_seconds": 0.0,
+        "val_loss": 0.002,
+        "checkpoint_hash": "6f41b338afa815242914e3316800ad2373ddc90ee3d4d7df0722e435f9e07735"
+      },
+      "accuracy": {
+        "value": 0.5,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "intent_accuracy": {
+        "value": 0.5,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "macro_f1": {
+        "value": 0.14285714285714285,
+        "provenance": "DERIVED",
+        "source": "macro_averaged_f1"
+      },
+      "ece": {
+        "value": 0.6835849165916443,
+        "provenance": "DERIVED",
+        "source": "10_bin_exact_ece"
+      },
+      "brier_score": {
+        "value": 0.6499317986862415,
+        "provenance": "DERIVED",
+        "source": "mean_squared_prob_error"
+      },
+      "useful_action_rate": {
+        "value": 0.3,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "false_action_rate": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "unsafe_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "model_p50_ms": {
+        "value": 646.525,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "model_p95_ms": {
+        "value": 673.737,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "model_p99_ms": {
+        "value": 699.846,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "cold_start_ms": {
+        "value": 66.995,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cold_pass"
+      },
+      "peak_rss_mb": {
+        "value": 42.36,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_getrusage"
+      },
+      "energy_mj": {
+        "value": null,
+        "provenance": "UNKNOWN",
+        "source": "battery_sysfs_permission_denied",
+        "notes": "Microampere power rails restricted on unrooted Android 16"
+      }
+    },
+    {
+      "model_id": "mobilebert_10m",
+      "family": "mobilebert",
+      "tier": "10m",
+      "parameters": {
+        "value": 11055184,
+        "provenance": "MEASURED",
+        "source": "exact_parameter_count"
+      },
+      "precision": "FP32",
+      "training": {
+        "epochs": 4,
+        "batch_size": 32,
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 0.01,
+        "seed": 42,
+        "duration_seconds": 0.0,
+        "val_loss": 0.002,
+        "checkpoint_hash": "c959d9a3d372eb04a9e6a22e67a7a06782432d1aadbced8d7c23d70f4f34eec6"
+      },
+      "accuracy": {
+        "value": 0.3,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "intent_accuracy": {
+        "value": 0.3,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "macro_f1": {
+        "value": 0.08571428571428572,
+        "provenance": "DERIVED",
+        "source": "macro_averaged_f1"
+      },
+      "ece": {
+        "value": 0.8614059448242187,
+        "provenance": "DERIVED",
+        "source": "10_bin_exact_ece"
+      },
+      "brier_score": {
+        "value": 0.774562154233714,
+        "provenance": "DERIVED",
+        "source": "mean_squared_prob_error"
+      },
+      "useful_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "false_action_rate": {
+        "value": 0.5,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "unsafe_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "model_p50_ms": {
+        "value": 29.336,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "model_p95_ms": {
+        "value": 30.476,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "model_p99_ms": {
+        "value": 36.577,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "cold_start_ms": {
+        "value": 29.094,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cold_pass"
+      },
+      "peak_rss_mb": {
+        "value": 16.36,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_getrusage"
+      },
+      "energy_mj": {
+        "value": null,
+        "provenance": "UNKNOWN",
+        "source": "battery_sysfs_permission_denied",
+        "notes": "Microampere power rails restricted on unrooted Android 16"
+      }
+    },
+    {
+      "model_id": "mobimind_hybrid_10m",
+      "family": "mobimind_hybrid",
+      "tier": "10m",
+      "parameters": {
+        "value": 9731600,
+        "provenance": "MEASURED",
+        "source": "exact_parameter_count"
+      },
+      "precision": "FP32",
+      "training": {
+        "epochs": 4,
+        "batch_size": 32,
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 0.01,
+        "seed": 42,
+        "duration_seconds": 0.0,
+        "val_loss": 0.002,
+        "checkpoint_hash": "c1aefc3b7d9a27268fff1646d8653df85c0bc2b33f715afade0146d51405cdf4"
+      },
+      "accuracy": {
+        "value": 0.3,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "intent_accuracy": {
+        "value": 0.5,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "macro_f1": {
+        "value": 0.08571428571428572,
+        "provenance": "DERIVED",
+        "source": "macro_averaged_f1"
+      },
+      "ece": {
+        "value": 0.666794800758362,
+        "provenance": "DERIVED",
+        "source": "10_bin_exact_ece"
+      },
+      "brier_score": {
+        "value": 0.6425846497026733,
+        "provenance": "DERIVED",
+        "source": "mean_squared_prob_error"
+      },
+      "useful_action_rate": {
+        "value": 0.3,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "false_action_rate": {
+        "value": 0.5,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "unsafe_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "model_p50_ms": {
+        "value": 36.801,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "model_p95_ms": {
+        "value": 39.177,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "model_p99_ms": {
+        "value": 44.923,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cpu_timer"
+      },
+      "cold_start_ms": {
+        "value": 20.768,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_cold_pass"
+      },
+      "peak_rss_mb": {
+        "value": 12.56,
+        "provenance": "MEASURED",
+        "source": "physical_rmx5070_getrusage"
+      },
+      "energy_mj": {
+        "value": null,
+        "provenance": "UNKNOWN",
+        "source": "battery_sysfs_permission_denied",
+        "notes": "Microampere power rails restricted on unrooted Android 16"
+      }
+    }
+  ]
+}

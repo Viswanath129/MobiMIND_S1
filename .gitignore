@@ -21,6 +21,11 @@ __pycache__/
 venv/
 .env
 
+# Large model weights and checkpoints
+*.pt
+*.onnx.data
+*.bin
+
 # Logs and system dumps
 *.log
 device-private dumps/
