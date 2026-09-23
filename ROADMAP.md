@@ -5,7 +5,8 @@
 - **v0.2-optimized**: Verification Strategy Engine & Context Delta Engine (Completed)
 - **v0.25**: Android Fast-Path Architecture & 20-Action Strategy Matrix (Completed)
 - **v0.3**: Model Capacity Scaling (Implementation complete; initial claims quarantined under E013)
-- **v0.3-R1**: Truth-First Empirical Capacity Rerun on Physical Hardware (Completed)
+- **v0.3-R1**: Truth-First Empirical Capacity Rerun on Physical Hardware (Proxy Kernel Audit Completed)
+- **v0.3-R2**: True Model-on-Device Validation (Full ONNX Weights Executed via Native Runtime Completed)
 - **v0.4**: Teacher-Student Distillation Pipeline
 - **v0.5**: Hardware Quantization (FP16 -> INT8 -> INT4 with Qualcomm QNN direct backend)
 - **v0.6**: Multimodal Screen Perception (UI Hierarchy + Vision Fallback)

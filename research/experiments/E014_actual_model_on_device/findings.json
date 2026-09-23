@@ -1,0 +1,41 @@
+{
+  "audit_target": "v0.3-R1",
+  "commit": "4ae52f962532c808d5603d10244099c0b7a26ae8",
+  "audit_timestamp": "2026-09-23T12:20:00+05:30",
+  "auditor": "Truth-First Research Audit Engine",
+  "overall_verdict": "RESOLVED_AND_VERIFIED_IN_V03_R2",
+  "findings": [
+    {
+      "id": "AUDIT-R1-001",
+      "severity": "CRITICAL",
+      "component": "physical_model_bench.cpp",
+      "issue": "Proxy kernel execution rather than actual trained model execution",
+      "description": "physical_model_bench.cpp executed hand-written NEON GEMM/conv loops with synthetic static floats (0.005f) instead of loading the trained ONNX candidate models. Measurements represent proxy architecture kernels, not actual model inference.",
+      "remediation": "Deploy real_onnx_device_runner linked to /system/lib64/libonnxruntime.so to load actual ONNX weights and execute the true graph on-device."
+    },
+    {
+      "id": "AUDIT-R1-002",
+      "severity": "HIGH",
+      "component": "real_train_eval_suite.py",
+      "issue": "Training metadata provenance inconsistency",
+      "description": "real_train_eval_suite.py trained with epochs=2 when retraining, but recorded epochs=4 in output JSON. Also recorded hard-coded val_loss=0.0020 on checkpoint load.",
+      "remediation": "Recompute validation loss on validation_set.json upon loading checkpoint, and record exact executed epochs."
+    },
+    {
+      "id": "AUDIT-R1-003",
+      "severity": "HIGH",
+      "component": "real_train_eval_suite.py",
+      "issue": "Incomplete ONNX output parity verification",
+      "description": "Only pt_out[0] (intent_logits) was compared against ort_out[0]; action_logits, risk, and confidence were unchecked.",
+      "remediation": "Verify numerical parity across all 4 output heads: intent_logits, action_logits, risk, and confidence."
+    },
+    {
+      "id": "AUDIT-R1-004",
+      "severity": "MEDIUM",
+      "component": "docs/research/v0.3_r1_empirical_report.md",
+      "issue": "Overly conclusive causal claims regarding distillation necessity",
+      "description": "Report claimed distillation was mathematically 'required', rather than stating that small-dataset scratch training showed poor generalization, motivating distillation as the next research hypothesis.",
+      "remediation": "Weaken conclusive language into hypothesis-driven scientific phrasing."
+    }
+  ]
+}

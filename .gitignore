@@ -13,6 +13,8 @@ local.properties
 *.so
 benchmarks/native/mobimind_ondevice_bench
 benchmarks/native/mobimind_gpu_bench
+benchmarks/native/real_onnx_device_runner
+benchmarks/native/physical_model_bench
 
 # Python
 __pycache__/

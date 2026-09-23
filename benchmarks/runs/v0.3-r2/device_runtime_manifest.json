@@ -1,0 +1,23 @@
+{
+  "device": {
+    "model": "Realme RMX5070",
+    "soc": "Qualcomm Snapdragon 6 Gen 4 (SM6650)",
+    "cpu_architecture": "ARM64-v8.2A (4x Cortex-A720 @ 2.4GHz + 4x Cortex-A520 @ 1.8GHz)",
+    "os_version": "Android 16 (API Level 36)",
+    "serial": "e7c443b9"
+  },
+  "onnx_runtime": {
+    "library_path": "/system/lib64/libonnxruntime.so",
+    "version": "1.15.0",
+    "interface": "ONNX Runtime C API (OrtGetApiBase)",
+    "execution_provider": "CPUExecutionProvider",
+    "intra_op_threads": 4,
+    "graph_optimization": "ORT_ENABLE_ALL",
+    "max_supported_ir_version": 9
+  },
+  "runner_binary": {
+    "source": "benchmarks/native/real_onnx_device_runner.cpp",
+    "compiler": "Android NDK r28 Clang 19.0.2 (aarch64-linux-android35-clang++)",
+    "remote_path": "/data/local/tmp/real_onnx_device_runner"
+  }
+}

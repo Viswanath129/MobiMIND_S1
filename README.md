@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Android_16_%7C_Snapdragon_6_Gen_4-green.svg)](hardware/device_baseline.json)
-[![Status](https://img.shields.io/badge/Status-Research_Milestone_v0.3--R1-blue.svg)](CHANGELOG.md)
+[![Status](https://img.shields.io/badge/Status-Research_Milestone_v0.3--R2-blue.svg)](CHANGELOG.md)
 
 > [!IMPORTANT]
 > **Scientific Disclaimer**: Measured results are device-, runtime-, workload-, and implementation-specific. Targets are not achieved results. The current 2,093-parameter model is a **control baseline**, not evidence that 2K parameters are sufficient for general mobile agency.
@@ -82,21 +82,26 @@ By replacing the artificial polling timer and host CLI invocation with in-proces
 
 ## 5. Leaderboards
 
-### Model Leaderboard
-| Version | Model | Parameters | Precision | Accuracy | Macro F1 | ECE | Model P50 | Model P95 | Peak RSS | Energy / Inf |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 0.1 | MobiMind-S1-v0 (Control) | 2,093 | FP32 | 100.0%* | 1.000 | 0.030 | **1.30 µs** | 1.35 µs | 34.8 MB | UNKNOWN |
-| 0.3-R1 | **mobilebert_10m (Fastest 10M)** | **11,055,184** | **FP32** | **30.0%** | **0.086** | **0.861** | **29.34 ms** | **30.48 ms** | **16.4 MB** | **UNKNOWN** |
-| 0.3-R1 | mobimind_hybrid_10m | 9,731,600 | FP32 | 30.0% | 0.086 | 0.667 | **36.80 ms** | 39.18 ms | 12.6 MB | UNKNOWN |
-| 0.3-R1 | standard_transformer_10m | 10,511,888 | FP32 | 50.0% | 0.152 | 0.666 | **41.07 ms** | 44.26 ms | 13.4 MB | UNKNOWN |
-| 0.3-R1 | **mobimind_hybrid_25m** | **24,536,016** | **FP32** | **50.0%** | **0.152** | **0.552** | **199.60 ms** | **203.38 ms** | **22.7 MB** | **UNKNOWN** |
-| 0.3-R1 | standard_transformer_25m | 25,213,456 | FP32 | 30.0% | 0.086 | 0.789 | **148.07 ms** | 156.29 ms | 23.5 MB | UNKNOWN |
-| 0.3-R1 | mobilebert_25m | 24,864,856 | FP32 | 40.0% | 0.143 | 0.753 | **264.93 ms** | 285.26 ms | 30.3 MB | UNKNOWN |
-| 0.3-R1 | albert_10m | 10,786,064 | FP32 | 50.0% | 0.143 | 0.684 | **646.52 ms** | 673.74 ms | 42.4 MB | UNKNOWN |
-| 0.3-R1 | albert_25m | 24,849,936 | FP32 | 40.0% | 0.133 | 0.752 | **4,302.67 ms**| 4,545.45 ms| 91.3 MB | UNKNOWN |
-| 0.3-R1 | albert_50m | 46,886,928 | FP32 | 30.0% | 0.071 | 0.682 | **18,405.41 ms**| 20,465.44 ms| 175.1 MB | UNKNOWN |
+### Model Leaderboard (True Model-on-Device Executions)
+All models executed with full weights via /system/lib64/libonnxruntime.so on Snapdragon 6 Gen 4 CPU (4 threads):
 
-*Note: Initial v0.3 metrics were audited and quarantined under E013 due to synthetic calculations. v0.3-R1 reports 100% empirical measurements from physical Snapdragon 6 Gen 4 CPU execution.*
+| Version | Model | Parameters | Precision | Accuracy | Macro F1 | Joint ECE | Model P50 | Model P95 | Peak RSS | Execution Method | Energy |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| v0.1 | MobiMind-S1-v0 (Control) | 2,093 | FP32 | 100.0%* | 1.000 | 0.030 | **1.30 µs** | 1.35 µs | 34.0 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| **v0.3-R2** | **mobimind_hybrid_10m** | **9,731,600** | **FP32** | **30.0%** | **0.086** | **0.667** | **3.65 ms** | **4.01 ms** | **40.6 MB** | **ACTUAL_ONDEVICE_MODEL** | **UNKNOWN** |
+| v0.3-R2 | standard_transformer_10m | 10,511,888 | FP32 | 50.0% | 0.152 | 0.666 | **5.38 ms** | 11.94 ms | 43.3 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| v0.3-R2 | mobilebert_10m | 11,055,184 | FP32 | 30.0% | 0.086 | 0.861 | **5.75 ms** | 10.21 ms | 43.6 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| v0.3-R2 | mobilebert_25m | 24,864,856 | FP32 | 40.0% | 0.143 | 0.753 | **15.01 ms** | 16.17 ms | 92.9 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| **v0.3-R2** | **mobimind_hybrid_25m** | **24,536,016** | **FP32** | **50.0%** | **0.152** | **0.552** | **15.17 ms** | **21.46 ms** | **92.9 MB** | **ACTUAL_ONDEVICE_MODEL** | **UNKNOWN** |
+| v0.3-R2 | standard_transformer_25m | 25,213,456 | FP32 | 30.0% | 0.086 | 0.789 | **16.05 ms** | 18.44 ms | 96.6 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| v0.3-R2 | mobilebert_50m | 49,742,816 | FP32 | 0.0% | 0.000 | 0.699 | **24.23 ms** | 33.33 ms | 190.8 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| v0.3-R2 | albert_10m | 10,786,064 | FP32 | 50.0% | 0.143 | 0.684 | **30.51 ms** | 39.01 ms | 257.1 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| v0.3-R2 | standard_transformer_50m | 50,399,248 | FP32 | 40.0% | 0.143 | 0.713 | **35.42 ms** | 36.24 ms | 195.9 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| v0.3-R2 | mobimind_hybrid_50m | 55,992,976 | FP32 | 30.0% | 0.086 | 0.665 | **52.13 ms** | 133.85 ms| 212.3 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| v0.3-R2 | albert_25m | 24,849,936 | FP32 | 40.0% | 0.133 | 0.752 | **142.22 ms**| 260.78 ms| 776.5 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+| v0.3-R2 | albert_50m | 46,886,928 | FP32 | 30.0% | 0.071 | 0.682 | **274.77 ms**| 402.28 ms| 2,208.7 MB | ACTUAL_ONDEVICE_MODEL | UNKNOWN |
+
+*Note: In v0.3-R1, proxy C++ loops reported unoptimized baseline GEMM latencies. v0.3-R2 measures actual full ONNX model graphs executed by /system/lib64/libonnxruntime.so on device.*
 
 ### Agent Leaderboard
 | Version | Strategy | Decision Latency | Action Latency | Verification Latency | **True E2E** | Useful Action Rate | False Action Rate |

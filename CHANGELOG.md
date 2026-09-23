@@ -2,6 +2,16 @@
 
 All notable changes to the MobiMIND-S1 project are documented here.
 
+## [v0.3-R2] - 2026-09-23
+### True Model-on-Device Validation
+- **E014**: Formal True Model-on-Device Validation Milestone. Deployed and executed actual trained ONNX model graphs and weight buffers on physical Snapdragon 6 Gen 4 hardware via Android native `/system/lib64/libonnxruntime.so` (v1.15.0).
+- **Native ONNX Runtime Harness**: Implemented `benchmarks/native/real_onnx_device_runner.cpp` compiled with NDK 28 Clang (`aarch64-linux-android35-clang++`). Configured 4 intra-op threads on Cortex-A720 performance cluster with `ORT_ENABLE_ALL` graph optimization.
+- **True Physical Measurements**: Measured genuine model load time, cold start, P50/P95 latency, and peak resident memory (`ru_maxrss`). MobiMIND Hybrid 10M achieved **3.65 ms P50** with **40.60 MB Peak RSS** ($\Delta = 34.05\text{ MB}$ parameter weights allocation).
+- **Comprehensive 4-Head Parity**: Verified host-side PyTorch vs ONNX numerical parity across all 4 output heads (`intent_logits`, `action_logits`, `risk`, `confidence`) with max absolute difference $< 3.34 \times 10^{-6}$.
+- **Empirical Loss & Calibration**: Recomputed exact validation loss directly on `validation_set.json` (eliminating hardcoded constants), and calculated exact 10-bin `joint_action_intent_ece` and multiclass Brier score.
+- **Physical Memory Accounting & ALBERT Activation Finding**: Proved that ALBERT parameter sharing, while compact on disk, triggers massive intermediate activation buffering in ONNX Runtime (expanding peak RSS to 2.2 GB for 50M with 6.7s load time).
+- **Artifacts**: Published `docs/research/v0.3_r2_actual_model_report.md`, `results/model_leaderboard_v03_r2.csv`, `benchmarks/runs/v0.3-r2/device_runtime_manifest.json`, and comparison JSONs under `benchmarks/runs/v0.3-r2/`.
+
 ## [v0.3-R1] - 2026-09-23
 ### Corrective Audit & Truth-First Run
 - **E013**: Formal Truth-First Audit of Milestone v0.3. Audited and quarantined synthetic accuracy calculations, hard-coded latency/RSS tables, and arbitrary energy multipliers.

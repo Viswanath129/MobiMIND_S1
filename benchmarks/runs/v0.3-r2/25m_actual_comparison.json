@@ -1,0 +1,386 @@
+{
+  "tier": "25m",
+  "provenance": "TRUTH_FIRST_ACTUAL_MODEL_ON_DEVICE",
+  "models": [
+    {
+      "model_id": "standard_transformer_25m",
+      "family": "standard_transformer",
+      "tier": "25m",
+      "execution_method": "ACTUAL_ONDEVICE_MODEL",
+      "parameters": {
+        "value": 25213456,
+        "provenance": "MEASURED",
+        "source": "exact_parameter_count"
+      },
+      "precision": "FP32",
+      "training": {
+        "epochs": 2,
+        "batch_size": 32,
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 0.01,
+        "seed": 42,
+        "val_loss": 0.0020234976895153523,
+        "checkpoint_sha256": "98bf8070ae8c777914d6c108602af1e3cfdf2a5d0d770a11756bb6971c3a521d"
+      },
+      "accuracy": {
+        "value": 0.3,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "intent_accuracy": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "macro_f1": {
+        "value": 0.08571428571428572,
+        "provenance": "DERIVED",
+        "source": "macro_averaged_f1"
+      },
+      "joint_action_intent_ece": {
+        "value": 0.7886103630065917,
+        "provenance": "DERIVED",
+        "source": "10_bin_joint_accuracy_ece"
+      },
+      "joint_accuracy_brier_score": {
+        "value": 0.7792345589524026,
+        "provenance": "DERIVED",
+        "source": "mean_squared_prob_error"
+      },
+      "useful_action_rate": {
+        "value": 0.2,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "false_action_rate": {
+        "value": 0.5,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "unsafe_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "onnx_parity": {
+        "intent_logits_diff": 1.6689300537109375e-06,
+        "action_logits_diff": 5.960464477539062e-07,
+        "risk_diff": 0.0,
+        "confidence_diff": 0.0,
+        "provenance": "MEASURED"
+      },
+      "on_device_hardware": {
+        "device": "Realme RMX5070 (Snapdragon 6 Gen 4)",
+        "runtime": "libonnxruntime.so v1.15.0",
+        "backend": "CPUExecutionProvider (4 threads)",
+        "load_time_ms": 154.155,
+        "cold_start_ms": 22.34,
+        "model_p50_ms": 16.051,
+        "model_p95_ms": 18.443,
+        "model_p99_ms": 18.443,
+        "model_min_ms": 15.167,
+        "model_max_ms": 18.443,
+        "model_mean_ms": 16.095,
+        "rss_before_load_kb": 6388,
+        "rss_after_load_kb": 98952,
+        "peak_rss_kb": 98952,
+        "peak_rss_mb": 96.63,
+        "rss_delta_mb": 90.39,
+        "provenance": "MEASURED",
+        "source": "real_onnx_device_runner"
+      },
+      "energy_mj": {
+        "value": null,
+        "provenance": "UNKNOWN",
+        "source": "battery_sysfs_permission_denied",
+        "notes": "Microampere power rails restricted on unrooted Android 16"
+      }
+    },
+    {
+      "model_id": "albert_25m",
+      "family": "albert",
+      "tier": "25m",
+      "execution_method": "ACTUAL_ONDEVICE_MODEL",
+      "parameters": {
+        "value": 24849936,
+        "provenance": "MEASURED",
+        "source": "exact_parameter_count"
+      },
+      "precision": "FP32",
+      "training": {
+        "epochs": 2,
+        "batch_size": 32,
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 0.01,
+        "seed": 42,
+        "val_loss": 0.39643245458602905,
+        "checkpoint_sha256": "38caa1ad3240a6dda0ec995996b1c7289dfb347b76688974d1a4ef6550314d03"
+      },
+      "accuracy": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "intent_accuracy": {
+        "value": 0.3,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "macro_f1": {
+        "value": 0.13333333333333333,
+        "provenance": "DERIVED",
+        "source": "macro_averaged_f1"
+      },
+      "joint_action_intent_ece": {
+        "value": 0.7518875598907471,
+        "provenance": "DERIVED",
+        "source": "10_bin_joint_accuracy_ece"
+      },
+      "joint_accuracy_brier_score": {
+        "value": 0.7252693816060372,
+        "provenance": "DERIVED",
+        "source": "mean_squared_prob_error"
+      },
+      "useful_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "false_action_rate": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "unsafe_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "onnx_parity": {
+        "intent_logits_diff": 1.9073486328125e-06,
+        "action_logits_diff": 9.5367431640625e-07,
+        "risk_diff": 2.60770320892334e-08,
+        "confidence_diff": 5.960464477539063e-08,
+        "provenance": "MEASURED"
+      },
+      "on_device_hardware": {
+        "device": "Realme RMX5070 (Snapdragon 6 Gen 4)",
+        "runtime": "libonnxruntime.so v1.15.0",
+        "backend": "CPUExecutionProvider (4 threads)",
+        "load_time_ms": 1215.546,
+        "cold_start_ms": 242.466,
+        "model_p50_ms": 142.215,
+        "model_p95_ms": 260.782,
+        "model_p99_ms": 260.782,
+        "model_min_ms": 92.364,
+        "model_max_ms": 260.782,
+        "model_mean_ms": 156.194,
+        "rss_before_load_kb": 6464,
+        "rss_after_load_kb": 794532,
+        "peak_rss_kb": 795152,
+        "peak_rss_mb": 776.52,
+        "rss_delta_mb": 770.2,
+        "provenance": "MEASURED",
+        "source": "real_onnx_device_runner"
+      },
+      "energy_mj": {
+        "value": null,
+        "provenance": "UNKNOWN",
+        "source": "battery_sysfs_permission_denied",
+        "notes": "Microampere power rails restricted on unrooted Android 16"
+      }
+    },
+    {
+      "model_id": "mobilebert_25m",
+      "family": "mobilebert",
+      "tier": "25m",
+      "execution_method": "ACTUAL_ONDEVICE_MODEL",
+      "parameters": {
+        "value": 24864856,
+        "provenance": "MEASURED",
+        "source": "exact_parameter_count"
+      },
+      "precision": "FP32",
+      "training": {
+        "epochs": 2,
+        "batch_size": 32,
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 0.01,
+        "seed": 42,
+        "val_loss": 1.6158700799942016,
+        "checkpoint_sha256": "271959fc76d10c9b130550fc730eb9c212e5f324306105c6cfdae72785bac514"
+      },
+      "accuracy": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "intent_accuracy": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "macro_f1": {
+        "value": 0.14285714285714285,
+        "provenance": "DERIVED",
+        "source": "macro_averaged_f1"
+      },
+      "joint_action_intent_ece": {
+        "value": 0.7533346474170686,
+        "provenance": "DERIVED",
+        "source": "10_bin_joint_accuracy_ece"
+      },
+      "joint_accuracy_brier_score": {
+        "value": 0.7172663818468419,
+        "provenance": "DERIVED",
+        "source": "mean_squared_prob_error"
+      },
+      "useful_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "false_action_rate": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "unsafe_action_rate": {
+        "value": 0.0,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "onnx_parity": {
+        "intent_logits_diff": 1.1920928955078125e-06,
+        "action_logits_diff": 4.76837158203125e-07,
+        "risk_diff": 1.4901161193847656e-08,
+        "confidence_diff": 0.0,
+        "provenance": "MEASURED"
+      },
+      "on_device_hardware": {
+        "device": "Realme RMX5070 (Snapdragon 6 Gen 4)",
+        "runtime": "libonnxruntime.so v1.15.0",
+        "backend": "CPUExecutionProvider (4 threads)",
+        "load_time_ms": 168.558,
+        "cold_start_ms": 19.981,
+        "model_p50_ms": 15.006,
+        "model_p95_ms": 16.171,
+        "model_p99_ms": 16.171,
+        "model_min_ms": 14.453,
+        "model_max_ms": 16.171,
+        "model_mean_ms": 15.086,
+        "rss_before_load_kb": 6480,
+        "rss_after_load_kb": 95080,
+        "peak_rss_kb": 95080,
+        "peak_rss_mb": 92.85,
+        "rss_delta_mb": 86.52,
+        "provenance": "MEASURED",
+        "source": "real_onnx_device_runner"
+      },
+      "energy_mj": {
+        "value": null,
+        "provenance": "UNKNOWN",
+        "source": "battery_sysfs_permission_denied",
+        "notes": "Microampere power rails restricted on unrooted Android 16"
+      }
+    },
+    {
+      "model_id": "mobimind_hybrid_25m",
+      "family": "mobimind_hybrid",
+      "tier": "25m",
+      "execution_method": "ACTUAL_ONDEVICE_MODEL",
+      "parameters": {
+        "value": 24536016,
+        "provenance": "MEASURED",
+        "source": "exact_parameter_count"
+      },
+      "precision": "FP32",
+      "training": {
+        "epochs": 2,
+        "batch_size": 32,
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 0.01,
+        "seed": 42,
+        "val_loss": 0.001404741571750492,
+        "checkpoint_sha256": "53495f07e763b7cddfcb7de97b5d81fc85f3df6bf9bd2b568caec2a7aa295766"
+      },
+      "accuracy": {
+        "value": 0.5,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "intent_accuracy": {
+        "value": 0.6,
+        "provenance": "MEASURED",
+        "source": "context_benchmark_v02"
+      },
+      "macro_f1": {
+        "value": 0.15151515151515152,
+        "provenance": "DERIVED",
+        "source": "macro_averaged_f1"
+      },
+      "joint_action_intent_ece": {
+        "value": 0.5518162965774537,
+        "provenance": "DERIVED",
+        "source": "10_bin_joint_accuracy_ece"
+      },
+      "joint_accuracy_brier_score": {
+        "value": 0.5231526304310676,
+        "provenance": "DERIVED",
+        "source": "mean_squared_prob_error"
+      },
+      "useful_action_rate": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "false_action_rate": {
+        "value": 0.4,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "unsafe_action_rate": {
+        "value": 0.1,
+        "provenance": "MEASURED",
+        "source": "canonical_eval"
+      },
+      "onnx_parity": {
+        "intent_logits_diff": 1.9073486328125e-06,
+        "action_logits_diff": 3.337860107421875e-06,
+        "risk_diff": 1.4901161193847656e-08,
+        "confidence_diff": 0.0,
+        "provenance": "MEASURED"
+      },
+      "on_device_hardware": {
+        "device": "Realme RMX5070 (Snapdragon 6 Gen 4)",
+        "runtime": "libonnxruntime.so v1.15.0",
+        "backend": "CPUExecutionProvider (4 threads)",
+        "load_time_ms": 142.253,
+        "cold_start_ms": 14.966,
+        "model_p50_ms": 15.173,
+        "model_p95_ms": 21.464,
+        "model_p99_ms": 21.464,
+        "model_min_ms": 14.489,
+        "model_max_ms": 21.464,
+        "model_mean_ms": 15.564,
+        "rss_before_load_kb": 6620,
+        "rss_after_load_kb": 93108,
+        "peak_rss_kb": 95104,
+        "peak_rss_mb": 92.88,
+        "rss_delta_mb": 86.41,
+        "provenance": "MEASURED",
+        "source": "real_onnx_device_runner"
+      },
+      "energy_mj": {
+        "value": null,
+        "provenance": "UNKNOWN",
+        "source": "battery_sysfs_permission_denied",
+        "notes": "Microampere power rails restricted on unrooted Android 16"
+      }
+    }
+  ]
+}
