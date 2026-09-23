@@ -1,0 +1,156 @@
+[
+  {
+    "id": "ctx_001",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 28,
+      "network": "wifi",
+      "event": "user_request",
+      "goal": "turn off wifi"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "action_params": {
+        "setting": "wifi",
+        "value": "off"
+      },
+      "risk": 0.04,
+      "confidence": 0.98
+    },
+    "verification": {
+      "required": true,
+      "expected_state": {
+        "wifi_enabled": false
+      },
+      "observed_state": {
+        "wifi_enabled": false
+      },
+      "success": true
+    }
+  },
+  {
+    "id": "ctx_002",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 65,
+      "network": "cellular",
+      "event": "user_request",
+      "goal": "connect headphones"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "action_params": {
+        "setting": "bluetooth",
+        "value": "on"
+      },
+      "risk": 0.02,
+      "confidence": 0.96
+    },
+    "verification": {
+      "required": true,
+      "expected_state": {
+        "bluetooth_enabled": true
+      },
+      "observed_state": {
+        "bluetooth_enabled": true
+      },
+      "success": true
+    }
+  },
+  {
+    "id": "ctx_003",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 12,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "preserve battery"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "action_params": {
+        "setting": "battery_saver",
+        "value": "on"
+      },
+      "risk": 0.05,
+      "confidence": 0.94
+    },
+    "verification": {
+      "required": true,
+      "expected_state": {
+        "battery_saver_enabled": true
+      },
+      "observed_state": {
+        "battery_saver_enabled": true
+      },
+      "success": true
+    }
+  },
+  {
+    "id": "ctx_004",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 45,
+      "network": "wifi",
+      "event": "incoming_notification",
+      "goal": "ignore notification and continue playback"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "action_params": {},
+      "risk": 0.0,
+      "confidence": 0.99
+    },
+    "verification": {
+      "required": true,
+      "expected_state": {
+        "playback_state": "playing",
+        "active_app": "youtube"
+      },
+      "observed_state": {
+        "playback_state": "playing",
+        "active_app": "youtube"
+      },
+      "success": true
+    }
+  },
+  {
+    "id": "ctx_005",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 50,
+      "network": "wifi",
+      "event": "user_request",
+      "goal": "set brightness to 50 percent"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "action_params": {
+        "setting": "screen_brightness",
+        "value": 128
+      },
+      "risk": 0.01,
+      "confidence": 0.97
+    },
+    "verification": {
+      "required": true,
+      "expected_state": {
+        "screen_brightness": 128
+      },
+      "observed_state": {
+        "screen_brightness": 128
+      },
+      "success": true
+    }
+  }
+]

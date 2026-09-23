@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-09-23T09:32:00+05:30",
+  "device": {
+    "serial": "e7c443b9",
+    "brand": "Realme / OPLUS",
+    "model": "RMX5070",
+    "product": "RMX5070IN",
+    "device_code": "RE608EL1",
+    "transport": "USB (transport_id 1)"
+  },
+  "os": {
+    "release": "16",
+    "api_level": 36,
+    "platform_version": "Baklava",
+    "abi_list": ["arm64-v8a"],
+    "nnapi_status": "Legacy libneuralnetworks.so absent on Android 16; libneuralnetworks_packageinfo.so only. Confirms zero reliance on deprecated NNAPI."
+  },
+  "soc": {
+    "chipset": "Snapdragon 6 Gen 4",
+    "soc_model": "SM6650",
+    "platform": "volcano",
+    "hardware": "qcom"
+  },
+  "cpu": {
+    "total_cores": 8,
+    "architecture": "ARMv9-A (64-bit)",
+    "topology": [
+      { "cores": "0-3", "type": "efficiency", "part": "0xd80 (Cortex-A520)", "implementer": "0x41 (ARM)" },
+      { "cores": "4-7", "type": "performance", "part": "0xd81 (Cortex-A720)", "implementer": "0x41 (ARM)" }
+    ],
+    "hardware_acceleration_features": [
+      "i8mm (Int8 Matrix Multiplication)",
+      "bf16 (Bfloat16 Floating Point)",
+      "asimddp (Advanced SIMD Dot Product)",
+      "fphp (Half-precision FP)",
+      "asimdhp (SIMD Half-precision)",
+      "aes", "sha3", "sha512"
+    ]
+  },
+  "gpu": {
+    "vendor": "Qualcomm",
+    "renderer": "Adreno (TM) 810",
+    "driver_date": "12/23/25",
+    "device_node": "/dev/kgsl-3d0 (crw-rw-rw-)",
+    "verified_apis": {
+      "opengl_es": "OpenGL ES 3.2 V@0800.67",
+      "vulkan": {
+        "driver": "/vendor/lib64/hw/vulkan.adreno.so",
+        "feature_compute": true,
+        "level": 1,
+        "version": 4206592
+      },
+      "opencl": {
+        "lib_opencl": "/vendor/lib64/libOpenCL.so",
+        "lib_opencl_adreno": "/vendor/lib64/libOpenCL_adreno.so",
+        "status": "Installed in /vendor/lib64"
+      }
+    }
+  },
+  "hexagon_subsystem": {
+    "cdsp_driver": "Qualcomm Hexagon Compute DSP (cDSP)",
+    "device_node": "/dev/adsprpc-smd",
+    "dsp_hal": "vendor.qti.hardware.dsp@1.0.so",
+    "rpc_libraries": [
+      "/vendor/lib64/libcdsprpc.so",
+      "/vendor/lib64/libcdsp_default_listener.so",
+      "/vendor/lib64/libadsprpc.so"
+    ],
+    "accelerator_hierarchy": {
+      "level_1": "HEXAGON",
+      "level_2_paths": ["cDSP", "HTP (probed via QNN direct backend)"]
+    },
+    "on_device_ai_packages": [
+      "com.realme.aiengine",
+      "com.oplus.aiunit",
+      "com.oplus.deepthinker",
+      "com.oplus.stdsp"
+    ]
+  },
+  "memory": {
+    "total_kb": 5538924,
+    "total_gb_nominal": 6.0,
+    "available_kb_idle": 1797036
+  },
+  "initial_thermal_power_state": {
+    "battery_level_percent": 43,
+    "battery_temperature_celsius": 32.2,
+    "phone_temperature_internal": 34.0,
+    "voltage_mv": 3892,
+    "usb_powered": true
+  }
+}

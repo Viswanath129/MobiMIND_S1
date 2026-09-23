@@ -1,0 +1,2 @@
+Version,Model,Parameters,Precision,File_Size_MB,Accuracy,Macro_F1,ECE,Model_P50_us,Model_P95_us,Peak_RSS_KB,Energy_mJ
+v0.1-baseline,MobiMind-S1-v0 (Control),2093,FP32,0.0188,1.00,1.00,0.03,1.30,1.35,34800,0.02

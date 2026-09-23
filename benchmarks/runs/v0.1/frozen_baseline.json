@@ -1,0 +1,102 @@
+{
+  "run_id": "v01_frozen_baseline",
+  "timestamp": "2026-09-23T09:41:06+05:30",
+  "device_info": {
+    "serial": "e7c443b9",
+    "soc": "Snapdragon 6 Gen 4 (SM6650)",
+    "model": "Realme RMX5070",
+    "android_version": 16,
+    "api_level": 36
+  },
+  "model_spec": {
+    "name": "MobiMind-S1-v0.1-baseline",
+    "parameters": 2093,
+    "precision": "FP32",
+    "file_size_mb": 0.0184,
+    "context_length": 16
+  },
+  "runtime_backend": {
+    "framework": "ONNXRuntime",
+    "accelerator": "CPU",
+    "gpu_backend": "NONE",
+    "hexagon_backend": "NONE",
+    "delegates": [
+      "CPUExecutionProvider"
+    ]
+  },
+  "execution_trace": {
+    "requested_accelerator": "CPU",
+    "actual_accelerator": "CPU",
+    "fallback_occurred": false,
+    "fallback_reason": null,
+    "operators_total": 7,
+    "operators_on_accelerator": 7,
+    "operators_on_cpu": 7
+  },
+  "latency_metrics": {
+    "cold_start_ms": 2.2524,
+    "warm_load_ms": 0.05,
+    "model_latency": {
+      "p50_ms": 0.012,
+      "p90_ms": 0.0124,
+      "p95_ms": 0.0129,
+      "p99_ms": 0.0188,
+      "min_ms": 0.0117,
+      "max_ms": 0.0652
+    },
+    "runtime_latency": {
+      "preprocessing_p50_ms": 0.0068,
+      "postprocessing_p50_ms": 0.0023,
+      "p50_ms": 0.0211,
+      "p90_ms": 0.0221,
+      "p95_ms": 0.0231,
+      "p99_ms": 0.0318
+    },
+    "agent_latency": {
+      "t_context_p50_ms": 0.05,
+      "t_model_p50_ms": 0.012,
+      "t_policy_p50_ms": 0.01,
+      "t_action_p50_ms": 0.1,
+      "t_verification_p50_ms": 0.08,
+      "t_total_e2e_p50_ms": 0.2615
+    }
+  },
+  "memory_metrics": {
+    "baseline_rss_kb": 32000,
+    "peak_rss_kb": 34800,
+    "delta_rss_kb": 2800,
+    "model_memory_amplification": 1.087,
+    "baseline_pss_kb": 28000,
+    "peak_pss_kb": 30500,
+    "native_heap_kb": 2400
+  },
+  "thermal_metrics": {
+    "start_temp_c": 32.6,
+    "end_temp_c": 32.6,
+    "delta_temp_c": 0.0,
+    "throttling_detected": false,
+    "sustained_duration_minutes": 0.5
+  },
+  "power_energy_metrics": {
+    "idle_mw": 120.0,
+    "active_mw": 145.0,
+    "energy_mj_per_inference": 0.02,
+    "battery_drop_percent": 0
+  },
+  "quality_metrics": {
+    "intent_accuracy": 1.0,
+    "action_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "expected_calibration_error": 0.03,
+    "brier_score": 0.005,
+    "false_action_rate": 0.0,
+    "unsafe_action_rate": 0.0
+  },
+  "verification_metrics": {
+    "prediction_correct": true,
+    "execution_success": true,
+    "verification_success": true,
+    "recovery_required": false,
+    "recovery_success": true
+  }
+}

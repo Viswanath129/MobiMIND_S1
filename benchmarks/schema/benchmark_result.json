@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MobiMindBenchmarkResult",
+  "type": "object",
+  "required": [
+    "run_id",
+    "timestamp",
+    "device_info",
+    "model_leaderboard",
+    "agent_leaderboard"
+  ],
+  "properties": {
+    "run_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "device_info": {
+      "type": "object",
+      "properties": {
+        "serial": { "type": "string" },
+        "soc": { "type": "string" },
+        "model": { "type": "string" },
+        "android_version": { "type": "integer" },
+        "api_level": { "type": "integer" }
+      }
+    },
+    "model_leaderboard": {
+      "type": "object",
+      "required": [
+        "model_name",
+        "parameters",
+        "precision",
+        "file_size_mb",
+        "accuracy",
+        "macro_f1",
+        "expected_calibration_error",
+        "model_latency_p50_us",
+        "model_latency_p95_us",
+        "peak_rss_kb",
+        "energy_mj_per_inference"
+      ],
+      "properties": {
+        "model_name": { "type": "string" },
+        "parameters": { "type": "integer" },
+        "precision": { "type": "string" },
+        "file_size_mb": { "type": "number" },
+        "accuracy": { "type": "number" },
+        "macro_f1": { "type": "number" },
+        "expected_calibration_error": { "type": "number" },
+        "model_latency_p50_us": { "type": "number" },
+        "model_latency_p95_us": { "type": "number" },
+        "peak_rss_kb": { "type": "integer" },
+        "energy_mj_per_inference": { "type": "number" }
+      }
+    },
+    "agent_leaderboard": {
+      "type": "object",
+      "required": [
+        "agent_name",
+        "verification_strategy",
+        "decision_latency_ms",
+        "action_latency_ms",
+        "verification_latency_ms",
+        "decision_to_act_ms",
+        "action_to_verified_ms",
+        "true_e2e_ms",
+        "useful_action_rate",
+        "false_action_rate",
+        "unsafe_action_rate",
+        "recovery_success_rate"
+      ],
+      "properties": {
+        "agent_name": { "type": "string" },
+        "verification_strategy": { "type": "string" },
+        "decision_latency_ms": { "type": "number" },
+        "action_latency_ms": { "type": "number" },
+        "verification_latency_ms": { "type": "number" },
+        "decision_to_act_ms": { "type": "number" },
+        "action_to_verified_ms": { "type": "number" },
+        "true_e2e_ms": { "type": "number" },
+        "useful_action_rate": { "type": "number" },
+        "false_action_rate": { "type": "number" },
+        "unsafe_action_rate": { "type": "number" },
+        "recovery_success_rate": { "type": "number" }
+      }
+    }
+  }
+}

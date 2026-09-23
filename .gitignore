@@ -1,0 +1,32 @@
+# Android & Gradle
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+local.properties
+.idea/
+*.iml
+
+# Native binaries & toolchains
+*.o
+*.so
+benchmarks/native/mobimind_ondevice_bench
+benchmarks/native/mobimind_gpu_bench
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# Logs and system dumps
+*.log
+device-private dumps/
+raw_bayer_frame.bin
+camera_dump.txt
+
+# OS
+.DS_Store
+Thumbs.db

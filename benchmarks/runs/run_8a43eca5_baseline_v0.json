@@ -1,0 +1,74 @@
+{
+  "run_id": "run_8a43eca5",
+  "timestamp": "2026-09-23T09:35:34+05:30",
+  "device_info": {
+    "serial": "e7c443b9",
+    "soc": "Snapdragon 6 Gen 4 (SM6650)",
+    "model": "Realme RMX5070",
+    "android_version": 16,
+    "api_level": 36
+  },
+  "model_spec": {
+    "name": "MobiMind-S1-v0-Tiny",
+    "parameters": 2093,
+    "precision": "FP32",
+    "file_size_mb": 0.0184,
+    "context_length": 16
+  },
+  "runtime_backend": {
+    "framework": "ONNXRuntime",
+    "accelerator": "CPU",
+    "gpu_backend": "NONE",
+    "hexagon_backend": "NONE",
+    "delegates": [
+      "CPUExecutionProvider"
+    ]
+  },
+  "latency_metrics": {
+    "cold_start_ms": 2.619,
+    "warm_load_ms": 0.05,
+    "preprocessing_ms": 0.0069,
+    "model_forward_p50_ms": 0.012,
+    "postprocessing_ms": 0.0023,
+    "ipc_overhead_ms": 0.01,
+    "e2e_p50_ms": 0.0212,
+    "p50_ms": 0.012,
+    "p90_ms": 0.0126,
+    "p95_ms": 0.0131,
+    "p99_ms": 0.0148,
+    "min_ms": 0.0117,
+    "max_ms": 0.0199
+  },
+  "memory_metrics": {
+    "baseline_rss_kb": 32000,
+    "peak_rss_kb": 34800,
+    "delta_rss_kb": 2800,
+    "model_memory_amplification": 1.087,
+    "baseline_pss_kb": 28000,
+    "peak_pss_kb": 30500,
+    "native_heap_kb": 2400
+  },
+  "thermal_metrics": {
+    "start_temp_c": 32.3,
+    "end_temp_c": 32.3,
+    "delta_temp_c": 0.0,
+    "throttling_detected": false,
+    "sustained_duration_minutes": 0.5
+  },
+  "power_energy_metrics": {
+    "idle_mw": 120.0,
+    "active_mw": 145.0,
+    "energy_mj_per_inference": 0.02,
+    "battery_drop_percent": 0
+  },
+  "quality_metrics": {
+    "intent_accuracy": 1.0,
+    "action_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "expected_calibration_error": 0.03,
+    "brier_score": 0.005,
+    "false_action_rate": 0.0,
+    "unsafe_action_rate": 0.0,
+    "recovery_success_rate": 1.0
+  }
+}

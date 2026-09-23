@@ -1,0 +1,72 @@
+{
+  "run_id": "v02_optimized_verification",
+  "timestamp": "2026-09-23T09:50:00+05:30",
+  "device_info": {
+    "serial": "e7c443b9",
+    "soc": "Snapdragon 6 Gen 4 (SM6650)",
+    "model": "Realme RMX5070",
+    "android_version": 16,
+    "api_level": 36
+  },
+  "model_leaderboard": {
+    "model_name": "MobiMind-S1-v0.1-baseline (Control)",
+    "parameters": 2093,
+    "precision": "FP32",
+    "file_size_mb": 0.0188,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "expected_calibration_error": 0.03,
+    "model_latency_p50_us": 1.30,
+    "model_latency_p95_us": 1.35,
+    "peak_rss_kb": 34800,
+    "energy_mj_per_inference": 0.02
+  },
+  "agent_leaderboard": {
+    "agent_name": "MobiMind-Agent-v0.2-EventDriven",
+    "verification_strategy": "EVENT (ContentObserver / AccessibilityEvent)",
+    "decision_latency_ms": 0.26,
+    "action_latency_ms": 15.00,
+    "verification_latency_ms": 6.93,
+    "decision_to_act_ms": 0.05,
+    "action_to_verified_ms": 21.93,
+    "true_e2e_ms": 22.19,
+    "useful_action_rate": 0.96,
+    "false_action_rate": 0.0,
+    "unsafe_action_rate": 0.0,
+    "recovery_success_rate": 1.0
+  },
+  "verification_strategy_ablation": [
+    {
+      "strategy": "DIRECT_API (In-Process Binder Query)",
+      "decision_latency_ms": 0.26,
+      "action_latency_ms": 1.20,
+      "verification_latency_ms": 1.53,
+      "true_e2e_ms": 2.99,
+      "speedup_vs_legacy_polling": "103.7x"
+    },
+    {
+      "strategy": "EVENT (ContentObserver / AccessibilityEvent)",
+      "decision_latency_ms": 0.26,
+      "action_latency_ms": 15.00,
+      "verification_latency_ms": 6.93,
+      "true_e2e_ms": 22.19,
+      "speedup_vs_legacy_polling": "14.0x"
+    },
+    {
+      "strategy": "UI_NODE (AccessibilityNodeInfo Tree Search)",
+      "decision_latency_ms": 0.26,
+      "action_latency_ms": 25.00,
+      "verification_latency_ms": 32.44,
+      "true_e2e_ms": 57.70,
+      "speedup_vs_legacy_polling": "5.4x"
+    },
+    {
+      "strategy": "TIMEOUT_FALLBACK (Legacy Polling Sleep)",
+      "decision_latency_ms": 0.26,
+      "action_latency_ms": 159.06,
+      "verification_latency_ms": 150.41,
+      "true_e2e_ms": 309.73,
+      "speedup_vs_legacy_polling": "1.0x (Baseline)"
+    }
+  ]
+}
