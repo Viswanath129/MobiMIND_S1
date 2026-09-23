@@ -1,0 +1,35 @@
+{
+  "run_id": "v025_fast_path_hierarchy",
+  "levels": {
+    "Level_0_Deterministic": {
+      "coverage_percent": 32.0,
+      "decision_latency_ms": 0.001,
+      "true_e2e_ms": 1.25,
+      "useful_action_rate": 1.0,
+      "false_action_rate": 0.0,
+      "unsafe_action_rate": 0.0
+    },
+    "Level_1_Heuristic": {
+      "coverage_percent": 24.0,
+      "decision_latency_ms": 0.008,
+      "true_e2e_ms": 1.35,
+      "useful_action_rate": 0.98,
+      "false_action_rate": 0.0,
+      "unsafe_action_rate": 0.0
+    },
+    "Level_2_MobiMind_S1": {
+      "coverage_percent": 44.0,
+      "decision_latency_ms": 0.261,
+      "true_e2e_ms": 2.99,
+      "useful_action_rate": 0.96,
+      "false_action_rate": 0.0,
+      "unsafe_action_rate": 0.0
+    },
+    "Cascade_Composite": {
+      "effective_decision_p50_ms": 0.045,
+      "effective_true_e2e_p50_ms": 1.82,
+      "useful_action_rate": 0.97,
+      "zero_model_inference_events": "56.0%"
+    }
+  }
+}

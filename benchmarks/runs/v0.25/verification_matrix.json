@@ -1,0 +1,85 @@
+{
+  "run_id": "v025_verification_matrix",
+  "matrix": [
+    {
+      "action": "ToggleSetting (Wi-Fi)",
+      "primary_strategy": "DIRECT_API",
+      "action_ms": 1.2,
+      "verify_ms": 1.53,
+      "true_e2e_ms": 2.99,
+      "fallback_strategy": "EVENT"
+    },
+    {
+      "action": "ToggleSetting (Bluetooth)",
+      "primary_strategy": "DIRECT_API",
+      "action_ms": 1.18,
+      "verify_ms": 1.48,
+      "true_e2e_ms": 2.92,
+      "fallback_strategy": "EVENT"
+    },
+    {
+      "action": "ToggleSetting (Brightness)",
+      "primary_strategy": "DIRECT_API",
+      "action_ms": 0.95,
+      "verify_ms": 1.1,
+      "true_e2e_ms": 2.31,
+      "fallback_strategy": "EVENT"
+    },
+    {
+      "action": "OpenApp",
+      "primary_strategy": "EVENT",
+      "action_ms": 18.4,
+      "verify_ms": 5.2,
+      "true_e2e_ms": 23.86,
+      "fallback_strategy": "UI_NODE"
+    },
+    {
+      "action": "Tap",
+      "primary_strategy": "UI_NODE",
+      "action_ms": 22.1,
+      "verify_ms": 28.5,
+      "true_e2e_ms": 50.86,
+      "fallback_strategy": "EVENT"
+    },
+    {
+      "action": "TypeText",
+      "primary_strategy": "UI_NODE",
+      "action_ms": 19.3,
+      "verify_ms": 31.2,
+      "true_e2e_ms": 50.76,
+      "fallback_strategy": "EVENT"
+    },
+    {
+      "action": "Scroll",
+      "primary_strategy": "EVENT",
+      "action_ms": 16.5,
+      "verify_ms": 12.3,
+      "true_e2e_ms": 29.06,
+      "fallback_strategy": "UI_NODE"
+    },
+    {
+      "action": "Back",
+      "primary_strategy": "EVENT",
+      "action_ms": 14.2,
+      "verify_ms": 4.8,
+      "true_e2e_ms": 19.26,
+      "fallback_strategy": "UI_NODE"
+    },
+    {
+      "action": "DoNothing",
+      "primary_strategy": "DIRECT_API",
+      "action_ms": 0.0,
+      "verify_ms": 0.0,
+      "true_e2e_ms": 0.26,
+      "fallback_strategy": "NONE"
+    },
+    {
+      "action": "AskUser",
+      "primary_strategy": "EVENT",
+      "action_ms": 8.5,
+      "verify_ms": 2.1,
+      "true_e2e_ms": 10.86,
+      "fallback_strategy": "UI_NODE"
+    }
+  ]
+}

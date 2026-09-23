@@ -1,0 +1,14 @@
+{
+  "run_id": "v025_true_e2e_trace",
+  "decomposition_ms": {
+    "T_context": 0.05,
+    "T_delta": 0.015,
+    "T_model": 0.0013,
+    "T_policy": 0.01,
+    "T_dispatch": 0.12,
+    "T_android": 1.08,
+    "T_verify": 1.53,
+    "T_total_direct_api_ms": 2.8063,
+    "T_total_event_driven_ms": 21.8463
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "v025_context_delta",
+  "comparison": {
+    "FULL_REBUILD": {
+      "context_update_latency_ms": 42.15,
+      "heap_allocation_kb": 128.0,
+      "cpu_time_ms": 18.4,
+      "stale_context_rate": 0.0
+    },
+    "DELTA_UPDATE": {
+      "context_update_latency_ms": 0.18,
+      "heap_allocation_kb": 1.2,
+      "cpu_time_ms": 0.08,
+      "stale_context_rate": 0.0,
+      "speedup": "234.1x",
+      "memory_reduction": "99.1%"
+    }
+  }
+}

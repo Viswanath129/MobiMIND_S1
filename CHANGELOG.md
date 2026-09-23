@@ -2,6 +2,15 @@
 
 All notable changes to the MobiMIND-S1 project are documented here.
 
+## [v0.25] - 2026-09-23
+### Added
+- **E005**: Fast-path hierarchy ablation (Level 0 deterministic rules bypass 32% of events with 0 ms model compute; Level 1 heuristics resolve 24%; composite cascade yields 0.045 ms decision latency).
+- **E006**: Context Delta Engine (reduces context latency from 42.15 ms to 0.18 ms; 234.1x faster with 99.1% memory reduction).
+- **E007**: 10-Action verification matrix (Direct API 2.3-2.9ms, Event-driven 10-29ms, UI Node 50ms).
+- **E008**: True physical-device E2E latency trace (`T_total = 2.81 ms`).
+- **E009**: Complete physical hardware crossover curve sweeping 2K to 50M parameters on Snapdragon 6 Gen 4 (ARMv9 CPU vs Adreno 810 GPU).
+### Verified Hardware Findings
+- CPU outpaces GPU across the entire 2K-50M single-batch sweep (CPU: 56.8 ms for 50M vs GPU: 1,385.9 ms).
 ## [v0.2-optimized] - 2026-09-23
 ### Added
 - Verification Strategy Engine (`DIRECT_API` -> `EVENT` -> `UI_NODE` -> `POLL` -> `TIMEOUT_FALLBACK`).

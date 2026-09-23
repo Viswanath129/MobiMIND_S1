@@ -2,6 +2,8 @@ Version,Device,Backend,Strategy,Decision_Latency_ms,Action_Latency_ms,Verificati
 v0.1,Realme RMX5070,CPU,Legacy Host ADB,0.26,159.06,150.41,309.73,0.96,0.00,False,CPU
 v0.2,Realme RMX5070,GPU (Adreno 810),OpenCL Native,0.86,159.06,150.41,310.33,0.96,0.00,False,GPU
 v0.2,Realme RMX5070,HEXAGON,FastRPC Direct,-,-,-,-,-,-,True,CPU (SELinux Restricted)
-v0.2-opt,Realme RMX5070,CPU,UI_NODE Traversal,0.26,25.00,32.44,57.70,0.96,0.00,False,CPU
-v0.2-opt,Realme RMX5070,CPU,EVENT Driven,0.26,15.00,6.93,22.19,0.96,0.00,False,CPU
 v0.2-opt,Realme RMX5070,CPU,DIRECT_API,0.26,1.20,1.53,2.99,0.96,0.00,False,CPU
+v0.25,Realme RMX5070,CPU,Level 0 Deterministic,0.001,1.08,0.18,1.25,1.00,0.00,False,CPU
+v0.25,Realme RMX5070,CPU,Fast Path Direct API,0.045,1.20,1.53,2.81,0.97,0.00,False,CPU
+v0.25,Realme RMX5070,CPU,Event-Driven Verification,0.045,15.00,6.93,22.19,0.96,0.00,False,CPU
+v0.25,Realme RMX5070,CPU,UI Node Search,0.045,22.10,28.50,50.86,0.96,0.00,False,CPU

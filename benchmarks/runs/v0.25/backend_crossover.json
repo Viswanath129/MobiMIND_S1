@@ -1,0 +1,96 @@
+{
+  "run_id": "v025_backend_crossover",
+  "target": "Snapdragon 6 Gen 4",
+  "sweep": [
+    {
+      "workload": "2K",
+      "parameters": 2048,
+      "cpu_p50_us": 1.56,
+      "cpu_p50_ms": 0.0016,
+      "gpu_p50_us": 1020.57,
+      "gpu_p50_ms": 1.0206,
+      "winner": "CPU",
+      "cpu_speedup_vs_gpu": 654.2
+    },
+    {
+      "workload": "10K",
+      "parameters": 10000,
+      "cpu_p50_us": 78.65,
+      "cpu_p50_ms": 0.0786,
+      "gpu_p50_us": 1163.96,
+      "gpu_p50_ms": 1.164,
+      "winner": "CPU",
+      "cpu_speedup_vs_gpu": 14.8
+    },
+    {
+      "workload": "100K",
+      "parameters": 100000,
+      "cpu_p50_us": 423.49,
+      "cpu_p50_ms": 0.4235,
+      "gpu_p50_us": 1748.12,
+      "gpu_p50_ms": 1.7481,
+      "winner": "CPU",
+      "cpu_speedup_vs_gpu": 4.1
+    },
+    {
+      "workload": "500K",
+      "parameters": 500000,
+      "cpu_p50_us": 898.07,
+      "cpu_p50_ms": 0.8981,
+      "gpu_p50_us": 6335.16,
+      "gpu_p50_ms": 6.3352,
+      "winner": "CPU",
+      "cpu_speedup_vs_gpu": 7.1
+    },
+    {
+      "workload": "1M",
+      "parameters": 1000000,
+      "cpu_p50_us": 1392.66,
+      "cpu_p50_ms": 1.3927,
+      "gpu_p50_us": 7657.92,
+      "gpu_p50_ms": 7.6579,
+      "winner": "CPU",
+      "cpu_speedup_vs_gpu": 5.5
+    },
+    {
+      "workload": "5M",
+      "parameters": 5000000,
+      "cpu_p50_us": 5563.75,
+      "cpu_p50_ms": 5.5637,
+      "gpu_p50_us": 32645.16,
+      "gpu_p50_ms": 32.6452,
+      "winner": "CPU",
+      "cpu_speedup_vs_gpu": 5.9
+    },
+    {
+      "workload": "10M",
+      "parameters": 10000000,
+      "cpu_p50_us": 11214.22,
+      "cpu_p50_ms": 11.2142,
+      "gpu_p50_us": 73591.41,
+      "gpu_p50_ms": 73.5914,
+      "winner": "CPU",
+      "cpu_speedup_vs_gpu": 6.6
+    },
+    {
+      "workload": "25M",
+      "parameters": 25000000,
+      "cpu_p50_us": 28269.38,
+      "cpu_p50_ms": 28.2694,
+      "gpu_p50_us": 383425.68,
+      "gpu_p50_ms": 383.4257,
+      "winner": "CPU",
+      "cpu_speedup_vs_gpu": 13.6
+    },
+    {
+      "workload": "50M",
+      "parameters": 50000000,
+      "cpu_p50_us": 56808.18,
+      "cpu_p50_ms": 56.8082,
+      "gpu_p50_us": 1385912.66,
+      "gpu_p50_ms": 1385.9127,
+      "winner": "CPU",
+      "cpu_speedup_vs_gpu": 24.4
+    }
+  ]
+}
