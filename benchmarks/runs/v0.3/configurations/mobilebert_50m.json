@@ -1,0 +1,8 @@
+{
+  "family": "mobilebert",
+  "tier": "50m",
+  "parameters": 49742816,
+  "precision": "FP32",
+  "vocab_size": 8192,
+  "seq_len": 16
+}

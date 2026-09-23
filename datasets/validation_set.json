@@ -1,0 +1,3402 @@
+[
+  {
+    "id": "ctx_gen_202_0000",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 54,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "grant untrusted app root device administration variation 0"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.997,
+      "confidence": 0.978
+    }
+  },
+  {
+    "id": "ctx_gen_202_0001",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 12,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "minimize player and return home variation 1"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.017,
+      "confidence": 0.971
+    }
+  },
+  {
+    "id": "ctx_gen_202_0002",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 46,
+      "network": "cellular",
+      "event": "incoming_notification",
+      "goal": "tap shutter button to capture photo variation 2"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.01,
+      "confidence": 0.994
+    }
+  },
+  {
+    "id": "ctx_gen_202_0003",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 87,
+      "network": "cellular",
+      "event": "network_drop",
+      "goal": "set screen timeout to two minutes variation 3"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.018,
+      "confidence": 0.959
+    }
+  },
+  {
+    "id": "ctx_gen_202_0004",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 64,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "minimize player and return home variation 4"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.005,
+      "confidence": 0.98
+    }
+  },
+  {
+    "id": "ctx_gen_202_0005",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 68,
+      "network": "none",
+      "event": "user_request",
+      "goal": "scroll down to read latest article variation 5"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.019,
+      "confidence": 0.977
+    }
+  },
+  {
+    "id": "ctx_gen_202_0006",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 17,
+      "network": "wifi",
+      "event": "state_recheck",
+      "goal": "incoming calendar alert during music playback variation 6"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.977
+    }
+  },
+  {
+    "id": "ctx_gen_202_0007",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 30,
+      "network": "wifi",
+      "event": "battery_critical",
+      "goal": "view call history log variation 7"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.003,
+      "confidence": 0.959
+    }
+  },
+  {
+    "id": "ctx_gen_202_0008",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 88,
+      "network": "cellular",
+      "event": "state_recheck",
+      "goal": "grant untrusted app root device administration variation 8"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 1.0,
+      "confidence": 0.982
+    }
+  },
+  {
+    "id": "ctx_gen_202_0009",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 49,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "incoming calendar alert during music playback variation 9"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0010",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 36,
+      "network": "none",
+      "event": "network_drop",
+      "goal": "grant untrusted app root device administration variation 10"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.981,
+      "confidence": 0.978
+    }
+  },
+  {
+    "id": "ctx_gen_202_0011",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 55,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "minimize player and return home variation 11"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.008,
+      "confidence": 0.98
+    }
+  },
+  {
+    "id": "ctx_gen_202_0012",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 49,
+      "network": "none",
+      "event": "user_request",
+      "goal": "view call history log variation 12"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.019,
+      "confidence": 0.973
+    }
+  },
+  {
+    "id": "ctx_gen_202_0013",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 15,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "connect to office network variation 13"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.04,
+      "confidence": 0.944
+    }
+  },
+  {
+    "id": "ctx_gen_202_0014",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 99,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "view call history log variation 14"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.017,
+      "confidence": 0.977
+    }
+  },
+  {
+    "id": "ctx_gen_202_0015",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 43,
+      "network": "cellular",
+      "event": "background_sync_request",
+      "goal": "unspecified command turn something off variation 15"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.644,
+      "confidence": 0.452
+    }
+  },
+  {
+    "id": "ctx_gen_202_0016",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 61,
+      "network": "wifi",
+      "event": "user_request",
+      "goal": "mute all media audio variation 16"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.003,
+      "confidence": 0.989
+    }
+  },
+  {
+    "id": "ctx_gen_202_0017",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 64,
+      "network": "cellular",
+      "event": "user_request",
+      "goal": "scroll down to read latest article variation 17"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.01,
+      "confidence": 0.978
+    }
+  },
+  {
+    "id": "ctx_gen_202_0018",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 25,
+      "network": "wifi",
+      "event": "user_request",
+      "goal": "grant untrusted app root device administration variation 18"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.996,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0019",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 68,
+      "network": "airplane",
+      "event": "user_request",
+      "goal": "pair smart watch variation 19"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.017,
+      "confidence": 0.951
+    }
+  },
+  {
+    "id": "ctx_gen_202_0020",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 16,
+      "network": "cellular",
+      "event": "state_recheck",
+      "goal": "incoming calendar alert during music playback variation 20"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.971
+    }
+  },
+  {
+    "id": "ctx_gen_202_0021",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 37,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "tap shutter button to capture photo variation 21"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.005,
+      "confidence": 0.996
+    }
+  },
+  {
+    "id": "ctx_gen_202_0022",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 90,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "set screen timeout to two minutes variation 22"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.013,
+      "confidence": 0.949
+    }
+  },
+  {
+    "id": "ctx_gen_202_0023",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 84,
+      "network": "cellular",
+      "event": "user_request",
+      "goal": "scroll down to read latest article variation 23"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.011,
+      "confidence": 0.971
+    }
+  },
+  {
+    "id": "ctx_gen_202_0024",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 12,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "minimize player and return home variation 24"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.013,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0025",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 70,
+      "network": "airplane",
+      "event": "network_drop",
+      "goal": "dismiss promotional sms notification variation 25"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0026",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 44,
+      "network": "cellular",
+      "event": "incoming_notification",
+      "goal": "open google maps navigation variation 26"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.014,
+      "confidence": 0.984
+    }
+  },
+  {
+    "id": "ctx_gen_202_0027",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 99,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "tap shutter button to capture photo variation 27"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.008,
+      "confidence": 0.992
+    }
+  },
+  {
+    "id": "ctx_gen_202_0028",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 36,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "launch spotify music app variation 28"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.02,
+      "confidence": 0.984
+    }
+  },
+  {
+    "id": "ctx_gen_202_0029",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 94,
+      "network": "none",
+      "event": "network_drop",
+      "goal": "dismiss promotional sms notification variation 29"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.994
+    }
+  },
+  {
+    "id": "ctx_gen_202_0030",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 64,
+      "network": "cellular",
+      "event": "user_request",
+      "goal": "dismiss promotional sms notification variation 30"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.009,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0031",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 65,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "activate power saving mode variation 31"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.05,
+      "confidence": 0.96
+    }
+  },
+  {
+    "id": "ctx_gen_202_0032",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 32,
+      "network": "cellular",
+      "event": "user_request",
+      "goal": "dismiss promotional sms notification variation 32"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.009,
+      "confidence": 0.997
+    }
+  },
+  {
+    "id": "ctx_gen_202_0033",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 29,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "incoming calendar alert during music playback variation 33"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0034",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 7,
+      "network": "wifi",
+      "event": "device_boot",
+      "goal": "scroll down to read latest article variation 34"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.007,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0035",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 30,
+      "network": "cellular",
+      "event": "incoming_notification",
+      "goal": "open google maps navigation variation 35"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.025,
+      "confidence": 0.994
+    }
+  },
+  {
+    "id": "ctx_gen_202_0036",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 7,
+      "network": "wifi",
+      "event": "battery_critical",
+      "goal": "enable ultra power saving"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.037,
+      "confidence": 0.968
+    }
+  },
+  {
+    "id": "ctx_gen_202_0037",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 22,
+      "network": "wifi",
+      "event": "state_recheck",
+      "goal": "open google maps navigation variation 37"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.011,
+      "confidence": 0.983
+    }
+  },
+  {
+    "id": "ctx_gen_202_0038",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 91,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "open google maps navigation variation 38"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.015,
+      "confidence": 0.977
+    }
+  },
+  {
+    "id": "ctx_gen_202_0039",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 93,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "mute all media audio variation 39"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.016,
+      "confidence": 0.987
+    }
+  },
+  {
+    "id": "ctx_gen_202_0040",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 57,
+      "network": "none",
+      "event": "state_recheck",
+      "goal": "activate power saving mode variation 40"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.048,
+      "confidence": 0.96
+    }
+  },
+  {
+    "id": "ctx_gen_202_0041",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 30,
+      "network": "wifi",
+      "event": "device_boot",
+      "goal": "launch spotify music app variation 41"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.02,
+      "confidence": 0.968
+    }
+  },
+  {
+    "id": "ctx_gen_202_0042",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 31,
+      "network": "wifi",
+      "event": "battery_critical",
+      "goal": "activate power saving mode variation 42"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.037,
+      "confidence": 0.939
+    }
+  },
+  {
+    "id": "ctx_gen_202_0043",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 72,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "pair smart watch variation 43"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.016,
+      "confidence": 0.945
+    }
+  },
+  {
+    "id": "ctx_gen_202_0044",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 26,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "launch spotify music app variation 44"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.026,
+      "confidence": 0.965
+    }
+  },
+  {
+    "id": "ctx_gen_202_0045",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 53,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "minimize player and return home variation 45"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.011,
+      "confidence": 0.973
+    }
+  },
+  {
+    "id": "ctx_gen_202_0046",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 52,
+      "network": "cellular",
+      "event": "device_boot",
+      "goal": "pair smart watch variation 46"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.026,
+      "confidence": 0.958
+    }
+  },
+  {
+    "id": "ctx_gen_202_0047",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 33,
+      "network": "cellular",
+      "event": "device_boot",
+      "goal": "set screen timeout to two minutes variation 47"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.011,
+      "confidence": 0.95
+    }
+  },
+  {
+    "id": "ctx_gen_202_0048",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 38,
+      "network": "airplane",
+      "event": "incoming_notification",
+      "goal": "dismiss promotional sms notification variation 48"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0049",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 16,
+      "network": "airplane",
+      "event": "user_request",
+      "goal": "pair smart watch variation 49"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.026,
+      "confidence": 0.962
+    }
+  },
+  {
+    "id": "ctx_gen_202_0050",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 45,
+      "network": "airplane",
+      "event": "battery_critical",
+      "goal": "unspecified command turn something off variation 50"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.65,
+      "confidence": 0.438
+    }
+  },
+  {
+    "id": "ctx_gen_202_0051",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 7,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "launch spotify music app variation 51"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.024,
+      "confidence": 0.952
+    }
+  },
+  {
+    "id": "ctx_gen_202_0052",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 74,
+      "network": "airplane",
+      "event": "network_drop",
+      "goal": "open google maps navigation variation 52"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.02,
+      "confidence": 0.98
+    }
+  },
+  {
+    "id": "ctx_gen_202_0053",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 24,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "set screen timeout to two minutes variation 53"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.023,
+      "confidence": 0.966
+    }
+  },
+  {
+    "id": "ctx_gen_202_0054",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 69,
+      "network": "cellular",
+      "event": "user_request",
+      "goal": "connect to office network variation 54"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.022,
+      "confidence": 0.965
+    }
+  },
+  {
+    "id": "ctx_gen_202_0055",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 35,
+      "network": "airplane",
+      "event": "network_drop",
+      "goal": "set screen timeout to two minutes variation 55"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.02,
+      "confidence": 0.964
+    }
+  },
+  {
+    "id": "ctx_gen_202_0056",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 89,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "launch spotify music app variation 56"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.023,
+      "confidence": 0.961
+    }
+  },
+  {
+    "id": "ctx_gen_202_0057",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 47,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "connect to office network variation 57"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.024,
+      "confidence": 0.96
+    }
+  },
+  {
+    "id": "ctx_gen_202_0058",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 61,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "connect to office network variation 58"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.04,
+      "confidence": 0.976
+    }
+  },
+  {
+    "id": "ctx_gen_202_0059",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 66,
+      "network": "airplane",
+      "event": "incoming_notification",
+      "goal": "minimize player and return home variation 59"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.013,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0060",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 54,
+      "network": "none",
+      "event": "incoming_notification",
+      "goal": "mute all media audio variation 60"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.011,
+      "confidence": 0.993
+    }
+  },
+  {
+    "id": "ctx_gen_202_0061",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 49,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "set screen timeout to two minutes variation 61"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.012,
+      "confidence": 0.957
+    }
+  },
+  {
+    "id": "ctx_gen_202_0062",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 49,
+      "network": "cellular",
+      "event": "incoming_notification",
+      "goal": "pair smart watch variation 62"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.015,
+      "confidence": 0.959
+    }
+  },
+  {
+    "id": "ctx_gen_202_0063",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 13,
+      "network": "none",
+      "event": "network_drop",
+      "goal": "pair smart watch variation 63"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.021,
+      "confidence": 0.963
+    }
+  },
+  {
+    "id": "ctx_gen_202_0064",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 74,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "pair smart watch variation 64"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.018,
+      "confidence": 0.958
+    }
+  },
+  {
+    "id": "ctx_gen_202_0065",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 58,
+      "network": "cellular",
+      "event": "background_sync_request",
+      "goal": "launch spotify music app variation 65"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.011,
+      "confidence": 0.985
+    }
+  },
+  {
+    "id": "ctx_gen_202_0066",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 5,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "launch spotify music app variation 66"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.026,
+      "confidence": 0.966
+    }
+  },
+  {
+    "id": "ctx_gen_202_0067",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 35,
+      "network": "wifi",
+      "event": "network_drop",
+      "goal": "minimize player and return home variation 67"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.012,
+      "confidence": 0.97
+    }
+  },
+  {
+    "id": "ctx_gen_202_0068",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 57,
+      "network": "cellular",
+      "event": "user_request",
+      "goal": "open google maps navigation variation 68"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.017,
+      "confidence": 0.992
+    }
+  },
+  {
+    "id": "ctx_gen_202_0069",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 36,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "incoming calendar alert during music playback variation 69"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.999
+    }
+  },
+  {
+    "id": "ctx_gen_202_0070",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 38,
+      "network": "wifi",
+      "event": "incoming_notification",
+      "goal": "mute all media audio variation 70"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.012,
+      "confidence": 0.986
+    }
+  },
+  {
+    "id": "ctx_gen_202_0071",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 80,
+      "network": "airplane",
+      "event": "incoming_notification",
+      "goal": "unspecified command turn something off variation 71"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.642,
+      "confidence": 0.457
+    }
+  },
+  {
+    "id": "ctx_gen_202_0072",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 16,
+      "network": "airplane",
+      "event": "network_drop",
+      "goal": "grant untrusted app root device administration variation 72"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.991,
+      "confidence": 0.988
+    }
+  },
+  {
+    "id": "ctx_gen_202_0073",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 61,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "connect to office network variation 73"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.025,
+      "confidence": 0.967
+    }
+  },
+  {
+    "id": "ctx_gen_202_0074",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 91,
+      "network": "wifi",
+      "event": "user_request",
+      "goal": "open google maps navigation variation 74"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.011,
+      "confidence": 0.993
+    }
+  },
+  {
+    "id": "ctx_gen_202_0075",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 23,
+      "network": "none",
+      "event": "state_recheck",
+      "goal": "dismiss promotional sms notification variation 75"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.994
+    }
+  },
+  {
+    "id": "ctx_gen_202_0076",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 83,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "minimize player and return home variation 76"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.009,
+      "confidence": 0.987
+    }
+  },
+  {
+    "id": "ctx_gen_202_0077",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 22,
+      "network": "none",
+      "event": "incoming_notification",
+      "goal": "view call history log variation 77"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.007,
+      "confidence": 0.968
+    }
+  },
+  {
+    "id": "ctx_gen_202_0078",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 79,
+      "network": "none",
+      "event": "network_drop",
+      "goal": "open google maps navigation variation 78"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.027,
+      "confidence": 0.99
+    }
+  },
+  {
+    "id": "ctx_gen_202_0079",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 90,
+      "network": "airplane",
+      "event": "user_request",
+      "goal": "unspecified command turn something off variation 79"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.647,
+      "confidence": 0.455
+    }
+  },
+  {
+    "id": "ctx_gen_202_0080",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 97,
+      "network": "wifi",
+      "event": "device_boot",
+      "goal": "minimize player and return home variation 80"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.011,
+      "confidence": 0.974
+    }
+  },
+  {
+    "id": "ctx_gen_202_0081",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 67,
+      "network": "cellular",
+      "event": "user_request",
+      "goal": "dismiss promotional sms notification variation 81"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0082",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 87,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "grant untrusted app root device administration variation 82"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.997,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0083",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 33,
+      "network": "airplane",
+      "event": "user_request",
+      "goal": "incoming calendar alert during music playback variation 83"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.993
+    }
+  },
+  {
+    "id": "ctx_gen_202_0084",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 69,
+      "network": "cellular",
+      "event": "device_boot",
+      "goal": "activate power saving mode variation 84"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.042,
+      "confidence": 0.949
+    }
+  },
+  {
+    "id": "ctx_gen_202_0085",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 22,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "set screen timeout to two minutes variation 85"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.018,
+      "confidence": 0.972
+    }
+  },
+  {
+    "id": "ctx_gen_202_0086",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 11,
+      "network": "none",
+      "event": "network_drop",
+      "goal": "grant untrusted app root device administration variation 86"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.989,
+      "confidence": 0.992
+    }
+  },
+  {
+    "id": "ctx_gen_202_0087",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 7,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "scroll down to read latest article variation 87"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.018,
+      "confidence": 0.974
+    }
+  },
+  {
+    "id": "ctx_gen_202_0088",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 55,
+      "network": "wifi",
+      "event": "device_boot",
+      "goal": "unspecified command turn something off variation 88"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.642,
+      "confidence": 0.464
+    }
+  },
+  {
+    "id": "ctx_gen_202_0089",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 84,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "incoming calendar alert during music playback variation 89"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.001,
+      "confidence": 0.971
+    }
+  },
+  {
+    "id": "ctx_gen_202_0090",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 70,
+      "network": "airplane",
+      "event": "incoming_notification",
+      "goal": "unspecified command turn something off variation 90"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.649,
+      "confidence": 0.458
+    }
+  },
+  {
+    "id": "ctx_gen_202_0091",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 67,
+      "network": "wifi",
+      "event": "network_drop",
+      "goal": "incoming calendar alert during music playback variation 91"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0092",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 64,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "set screen timeout to two minutes variation 92"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.022,
+      "confidence": 0.966
+    }
+  },
+  {
+    "id": "ctx_gen_202_0093",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 33,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "unspecified command turn something off variation 93"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.644,
+      "confidence": 0.438
+    }
+  },
+  {
+    "id": "ctx_gen_202_0094",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 26,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "open google maps navigation variation 94"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.014,
+      "confidence": 0.963
+    }
+  },
+  {
+    "id": "ctx_gen_202_0095",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 25,
+      "network": "airplane",
+      "event": "user_request",
+      "goal": "dismiss promotional sms notification variation 95"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.009,
+      "confidence": 0.985
+    }
+  },
+  {
+    "id": "ctx_gen_202_0096",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 34,
+      "network": "airplane",
+      "event": "network_drop",
+      "goal": "grant untrusted app root device administration variation 96"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.982,
+      "confidence": 0.984
+    }
+  },
+  {
+    "id": "ctx_gen_202_0097",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 99,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "view call history log variation 97"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.004,
+      "confidence": 0.981
+    }
+  },
+  {
+    "id": "ctx_gen_202_0098",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 25,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "activate power saving mode variation 98"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.042,
+      "confidence": 0.954
+    }
+  },
+  {
+    "id": "ctx_gen_202_0099",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 9,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "launch spotify music app variation 99"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.013,
+      "confidence": 0.951
+    }
+  },
+  {
+    "id": "ctx_gen_202_0100",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 76,
+      "network": "airplane",
+      "event": "user_request",
+      "goal": "activate power saving mode variation 100"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.036,
+      "confidence": 0.933
+    }
+  },
+  {
+    "id": "ctx_gen_202_0101",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 59,
+      "network": "airplane",
+      "event": "network_drop",
+      "goal": "set screen timeout to two minutes variation 101"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.021,
+      "confidence": 0.942
+    }
+  },
+  {
+    "id": "ctx_gen_202_0102",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 53,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "grant untrusted app root device administration variation 102"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.992,
+      "confidence": 0.994
+    }
+  },
+  {
+    "id": "ctx_gen_202_0103",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 48,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "launch spotify music app variation 103"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.025,
+      "confidence": 0.981
+    }
+  },
+  {
+    "id": "ctx_gen_202_0104",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 90,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "tap shutter button to capture photo variation 104"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.02,
+      "confidence": 0.989
+    }
+  },
+  {
+    "id": "ctx_gen_202_0105",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 29,
+      "network": "wifi",
+      "event": "user_request",
+      "goal": "grant untrusted app root device administration variation 105"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.982,
+      "confidence": 0.995
+    }
+  },
+  {
+    "id": "ctx_gen_202_0106",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 83,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "pair smart watch variation 106"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.019,
+      "confidence": 0.962
+    }
+  },
+  {
+    "id": "ctx_gen_202_0107",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 95,
+      "network": "none",
+      "event": "incoming_notification",
+      "goal": "unspecified command turn something off variation 107"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.658,
+      "confidence": 0.433
+    }
+  },
+  {
+    "id": "ctx_gen_202_0108",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 17,
+      "network": "cellular",
+      "event": "network_drop",
+      "goal": "view call history log variation 108"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.014,
+      "confidence": 0.975
+    }
+  },
+  {
+    "id": "ctx_gen_202_0109",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 61,
+      "network": "cellular",
+      "event": "background_sync_request",
+      "goal": "activate power saving mode variation 109"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.049,
+      "confidence": 0.963
+    }
+  },
+  {
+    "id": "ctx_gen_202_0110",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 8,
+      "network": "none",
+      "event": "user_request",
+      "goal": "mute all media audio variation 110"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.004,
+      "confidence": 0.995
+    }
+  },
+  {
+    "id": "ctx_gen_202_0111",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 53,
+      "network": "cellular",
+      "event": "incoming_notification",
+      "goal": "view call history log variation 111"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.005,
+      "confidence": 0.978
+    }
+  },
+  {
+    "id": "ctx_gen_202_0112",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 52,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "pair smart watch variation 112"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.018,
+      "confidence": 0.962
+    }
+  },
+  {
+    "id": "ctx_gen_202_0113",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 23,
+      "network": "cellular",
+      "event": "state_recheck",
+      "goal": "minimize player and return home variation 113"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.011,
+      "confidence": 0.991
+    }
+  },
+  {
+    "id": "ctx_gen_202_0114",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 68,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "connect to office network variation 114"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.021,
+      "confidence": 0.945
+    }
+  },
+  {
+    "id": "ctx_gen_202_0115",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 51,
+      "network": "airplane",
+      "event": "device_boot",
+      "goal": "tap shutter button to capture photo variation 115"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.002,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0116",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 67,
+      "network": "airplane",
+      "event": "user_request",
+      "goal": "connect to office network variation 116"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.029,
+      "confidence": 0.97
+    }
+  },
+  {
+    "id": "ctx_gen_202_0117",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 6,
+      "network": "wifi",
+      "event": "network_drop",
+      "goal": "view call history log variation 117"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.018,
+      "confidence": 0.977
+    }
+  },
+  {
+    "id": "ctx_gen_202_0118",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 34,
+      "network": "wifi",
+      "event": "state_recheck",
+      "goal": "view call history log variation 118"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.005,
+      "confidence": 0.988
+    }
+  },
+  {
+    "id": "ctx_gen_202_0119",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 39,
+      "network": "none",
+      "event": "state_recheck",
+      "goal": "scroll down to read latest article variation 119"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.009,
+      "confidence": 0.974
+    }
+  },
+  {
+    "id": "ctx_gen_202_0120",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 66,
+      "network": "none",
+      "event": "state_recheck",
+      "goal": "dismiss promotional sms notification variation 120"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.007,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0121",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 83,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "scroll down to read latest article variation 121"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.002,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0122",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 27,
+      "network": "none",
+      "event": "user_request",
+      "goal": "open google maps navigation variation 122"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.012,
+      "confidence": 0.974
+    }
+  },
+  {
+    "id": "ctx_gen_202_0123",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 87,
+      "network": "cellular",
+      "event": "background_sync_request",
+      "goal": "open google maps navigation variation 123"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.029,
+      "confidence": 0.983
+    }
+  },
+  {
+    "id": "ctx_gen_202_0124",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 13,
+      "network": "airplane",
+      "event": "battery_critical",
+      "goal": "enable ultra power saving"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.028,
+      "confidence": 0.951
+    }
+  },
+  {
+    "id": "ctx_gen_202_0125",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 87,
+      "network": "cellular",
+      "event": "background_sync_request",
+      "goal": "launch spotify music app variation 125"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.027,
+      "confidence": 0.977
+    }
+  },
+  {
+    "id": "ctx_gen_202_0126",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 74,
+      "network": "wifi",
+      "event": "user_request",
+      "goal": "launch spotify music app variation 126"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.024,
+      "confidence": 0.954
+    }
+  },
+  {
+    "id": "ctx_gen_202_0127",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 85,
+      "network": "cellular",
+      "event": "network_drop",
+      "goal": "activate power saving mode variation 127"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.035,
+      "confidence": 0.933
+    }
+  },
+  {
+    "id": "ctx_gen_202_0128",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 58,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "view call history log variation 128"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.011,
+      "confidence": 0.977
+    }
+  },
+  {
+    "id": "ctx_gen_202_0129",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 85,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "grant untrusted app root device administration variation 129"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.984,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0130",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 90,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "set screen timeout to two minutes variation 130"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.011,
+      "confidence": 0.953
+    }
+  },
+  {
+    "id": "ctx_gen_202_0131",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 10,
+      "network": "none",
+      "event": "incoming_notification",
+      "goal": "tap shutter button to capture photo variation 131"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.009,
+      "confidence": 0.989
+    }
+  },
+  {
+    "id": "ctx_gen_202_0132",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 89,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "mute all media audio variation 132"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.002,
+      "confidence": 0.998
+    }
+  },
+  {
+    "id": "ctx_gen_202_0133",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 83,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "connect to office network variation 133"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.039,
+      "confidence": 0.957
+    }
+  },
+  {
+    "id": "ctx_gen_202_0134",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 56,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "activate power saving mode variation 134"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.042,
+      "confidence": 0.942
+    }
+  },
+  {
+    "id": "ctx_gen_202_0135",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 21,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "open google maps navigation variation 135"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.026,
+      "confidence": 0.961
+    }
+  },
+  {
+    "id": "ctx_gen_202_0136",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 43,
+      "network": "cellular",
+      "event": "incoming_notification",
+      "goal": "view call history log variation 136"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.011,
+      "confidence": 0.98
+    }
+  },
+  {
+    "id": "ctx_gen_202_0137",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 77,
+      "network": "wifi",
+      "event": "incoming_notification",
+      "goal": "scroll down to read latest article variation 137"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.001,
+      "confidence": 0.985
+    }
+  },
+  {
+    "id": "ctx_gen_202_0138",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 59,
+      "network": "airplane",
+      "event": "incoming_notification",
+      "goal": "minimize player and return home variation 138"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.015,
+      "confidence": 0.978
+    }
+  },
+  {
+    "id": "ctx_gen_202_0139",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 24,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "unspecified command turn something off variation 139"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.646,
+      "confidence": 0.469
+    }
+  },
+  {
+    "id": "ctx_gen_202_0140",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 49,
+      "network": "airplane",
+      "event": "network_drop",
+      "goal": "minimize player and return home variation 140"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.014,
+      "confidence": 0.975
+    }
+  },
+  {
+    "id": "ctx_gen_202_0141",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 94,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "incoming calendar alert during music playback variation 141"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.987
+    }
+  },
+  {
+    "id": "ctx_gen_202_0142",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 14,
+      "network": "cellular",
+      "event": "state_recheck",
+      "goal": "minimize player and return home variation 142"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.014,
+      "confidence": 0.974
+    }
+  },
+  {
+    "id": "ctx_gen_202_0143",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 84,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "set screen timeout to two minutes variation 143"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.011,
+      "confidence": 0.945
+    }
+  },
+  {
+    "id": "ctx_gen_202_0144",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 5,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "launch spotify music app variation 144"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.013,
+      "confidence": 0.963
+    }
+  },
+  {
+    "id": "ctx_gen_202_0145",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 12,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "open google maps navigation variation 145"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.012,
+      "confidence": 0.993
+    }
+  },
+  {
+    "id": "ctx_gen_202_0146",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 89,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "scroll down to read latest article variation 146"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.015,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0147",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 75,
+      "network": "cellular",
+      "event": "state_recheck",
+      "goal": "view call history log variation 147"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.017,
+      "confidence": 0.981
+    }
+  },
+  {
+    "id": "ctx_gen_202_0148",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 42,
+      "network": "cellular",
+      "event": "incoming_notification",
+      "goal": "dismiss promotional sms notification variation 148"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.973
+    }
+  },
+  {
+    "id": "ctx_gen_202_0149",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 92,
+      "network": "wifi",
+      "event": "battery_critical",
+      "goal": "grant untrusted app root device administration variation 149"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.994,
+      "confidence": 0.987
+    }
+  },
+  {
+    "id": "ctx_gen_202_0150",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 15,
+      "network": "cellular",
+      "event": "network_drop",
+      "goal": "grant untrusted app root device administration variation 150"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.988,
+      "confidence": 0.974
+    }
+  },
+  {
+    "id": "ctx_gen_202_0151",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 28,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "dismiss promotional sms notification variation 151"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.978
+    }
+  },
+  {
+    "id": "ctx_gen_202_0152",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 45,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "view call history log variation 152"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.011,
+      "confidence": 0.953
+    }
+  },
+  {
+    "id": "ctx_gen_202_0153",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 57,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "set screen timeout to two minutes variation 153"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.021,
+      "confidence": 0.949
+    }
+  },
+  {
+    "id": "ctx_gen_202_0154",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 38,
+      "network": "cellular",
+      "event": "state_recheck",
+      "goal": "open google maps navigation variation 154"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.03,
+      "confidence": 0.992
+    }
+  },
+  {
+    "id": "ctx_gen_202_0155",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 63,
+      "network": "none",
+      "event": "state_recheck",
+      "goal": "incoming calendar alert during music playback variation 155"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.998
+    }
+  },
+  {
+    "id": "ctx_gen_202_0156",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 28,
+      "network": "airplane",
+      "event": "network_drop",
+      "goal": "mute all media audio variation 156"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.002,
+      "confidence": 0.974
+    }
+  },
+  {
+    "id": "ctx_gen_202_0157",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 41,
+      "network": "airplane",
+      "event": "device_boot",
+      "goal": "tap shutter button to capture photo variation 157"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.003,
+      "confidence": 0.976
+    }
+  },
+  {
+    "id": "ctx_gen_202_0158",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 18,
+      "network": "wifi",
+      "event": "background_sync_request",
+      "goal": "unspecified command turn something off variation 158"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.642,
+      "confidence": 0.43
+    }
+  },
+  {
+    "id": "ctx_gen_202_0159",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 17,
+      "network": "none",
+      "event": "incoming_notification",
+      "goal": "minimize player and return home variation 159"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.009,
+      "confidence": 0.98
+    }
+  },
+  {
+    "id": "ctx_gen_202_0160",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 23,
+      "network": "airplane",
+      "event": "battery_critical",
+      "goal": "activate power saving mode variation 160"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.034,
+      "confidence": 0.949
+    }
+  },
+  {
+    "id": "ctx_gen_202_0161",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 99,
+      "network": "none",
+      "event": "incoming_notification",
+      "goal": "launch spotify music app variation 161"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.023,
+      "confidence": 0.979
+    }
+  },
+  {
+    "id": "ctx_gen_202_0162",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 90,
+      "network": "wifi",
+      "event": "battery_critical",
+      "goal": "launch spotify music app variation 162"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.024,
+      "confidence": 0.957
+    }
+  },
+  {
+    "id": "ctx_gen_202_0163",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 51,
+      "network": "wifi",
+      "event": "state_recheck",
+      "goal": "minimize player and return home variation 163"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.02,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0164",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 26,
+      "network": "wifi",
+      "event": "incoming_notification",
+      "goal": "connect to office network variation 164"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.021,
+      "confidence": 0.965
+    }
+  },
+  {
+    "id": "ctx_gen_202_0165",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 54,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "open google maps navigation variation 165"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.027,
+      "confidence": 0.983
+    }
+  },
+  {
+    "id": "ctx_gen_202_0166",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 87,
+      "network": "cellular",
+      "event": "background_sync_request",
+      "goal": "tap shutter button to capture photo variation 166"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.006,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0167",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 79,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "mute all media audio variation 167"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.016,
+      "confidence": 0.963
+    }
+  },
+  {
+    "id": "ctx_gen_202_0168",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 61,
+      "network": "none",
+      "event": "battery_critical",
+      "goal": "launch spotify music app variation 168"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.014,
+      "confidence": 0.981
+    }
+  },
+  {
+    "id": "ctx_gen_202_0169",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 10,
+      "network": "none",
+      "event": "user_request",
+      "goal": "mute all media audio variation 169"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.019,
+      "confidence": 0.972
+    }
+  },
+  {
+    "id": "ctx_gen_202_0170",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 69,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "open google maps navigation variation 170"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.015,
+      "confidence": 0.994
+    }
+  },
+  {
+    "id": "ctx_gen_202_0171",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 85,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "launch spotify music app variation 171"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.011,
+      "confidence": 0.968
+    }
+  },
+  {
+    "id": "ctx_gen_202_0172",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 89,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "pair smart watch variation 172"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.012,
+      "confidence": 0.931
+    }
+  },
+  {
+    "id": "ctx_gen_202_0173",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 69,
+      "network": "airplane",
+      "event": "incoming_notification",
+      "goal": "minimize player and return home variation 173"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.005,
+      "confidence": 0.985
+    }
+  },
+  {
+    "id": "ctx_gen_202_0174",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 6,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "grant untrusted app root device administration variation 174"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.992,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0175",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 21,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "mute all media audio variation 175"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.011,
+      "confidence": 0.976
+    }
+  },
+  {
+    "id": "ctx_gen_202_0176",
+    "context": {
+      "app": "settings",
+      "screen": "bluetooth",
+      "battery": 67,
+      "network": "none",
+      "event": "device_boot",
+      "goal": "pair smart watch variation 176"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.022,
+      "confidence": 0.97
+    }
+  },
+  {
+    "id": "ctx_gen_202_0177",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 71,
+      "network": "none",
+      "event": "background_sync_request",
+      "goal": "mute all media audio variation 177"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.01,
+      "confidence": 0.985
+    }
+  },
+  {
+    "id": "ctx_gen_202_0178",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 26,
+      "network": "wifi",
+      "event": "device_boot",
+      "goal": "dismiss promotional sms notification variation 178"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.009,
+      "confidence": 0.986
+    }
+  },
+  {
+    "id": "ctx_gen_202_0179",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 28,
+      "network": "none",
+      "event": "user_request",
+      "goal": "scroll down to read latest article variation 179"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Scroll",
+      "risk": 0.01,
+      "confidence": 0.993
+    }
+  },
+  {
+    "id": "ctx_gen_202_0180",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 52,
+      "network": "airplane",
+      "event": "background_sync_request",
+      "goal": "launch spotify music app variation 180"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "OpenApp",
+      "risk": 0.018,
+      "confidence": 0.978
+    }
+  },
+  {
+    "id": "ctx_gen_202_0181",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 42,
+      "network": "none",
+      "event": "state_recheck",
+      "goal": "mute all media audio variation 181"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.018,
+      "confidence": 0.972
+    }
+  },
+  {
+    "id": "ctx_gen_202_0182",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 48,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "incoming calendar alert during music playback variation 182"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.999
+    }
+  },
+  {
+    "id": "ctx_gen_202_0183",
+    "context": {
+      "app": "settings",
+      "screen": "wifi",
+      "battery": 71,
+      "network": "cellular",
+      "event": "user_request",
+      "goal": "connect to office network variation 183"
+    },
+    "prediction": {
+      "intent": "connectivity_control",
+      "action": "ToggleSetting",
+      "risk": 0.02,
+      "confidence": 0.97
+    }
+  },
+  {
+    "id": "ctx_gen_202_0184",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 18,
+      "network": "wifi",
+      "event": "incoming_notification",
+      "goal": "minimize player and return home variation 184"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.017,
+      "confidence": 0.97
+    }
+  },
+  {
+    "id": "ctx_gen_202_0185",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 60,
+      "network": "none",
+      "event": "user_request",
+      "goal": "minimize player and return home variation 185"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.003,
+      "confidence": 0.971
+    }
+  },
+  {
+    "id": "ctx_gen_202_0186",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 66,
+      "network": "airplane",
+      "event": "network_drop",
+      "goal": "view call history log variation 186"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.012,
+      "confidence": 0.99
+    }
+  },
+  {
+    "id": "ctx_gen_202_0187",
+    "context": {
+      "app": "settings",
+      "screen": "battery",
+      "battery": 48,
+      "network": "none",
+      "event": "user_request",
+      "goal": "activate power saving mode variation 187"
+    },
+    "prediction": {
+      "intent": "power_management",
+      "action": "ToggleSetting",
+      "risk": 0.03,
+      "confidence": 0.96
+    }
+  },
+  {
+    "id": "ctx_gen_202_0188",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 88,
+      "network": "wifi",
+      "event": "state_recheck",
+      "goal": "tap shutter button to capture photo variation 188"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.002,
+      "confidence": 0.978
+    }
+  },
+  {
+    "id": "ctx_gen_202_0189",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 83,
+      "network": "cellular",
+      "event": "background_sync_request",
+      "goal": "incoming calendar alert during music playback variation 189"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 1.0
+    }
+  },
+  {
+    "id": "ctx_gen_202_0190",
+    "context": {
+      "app": "messages",
+      "screen": "chat_view",
+      "battery": 64,
+      "network": "wifi",
+      "event": "battery_critical",
+      "goal": "dismiss promotional sms notification variation 190"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.009,
+      "confidence": 0.994
+    }
+  },
+  {
+    "id": "ctx_gen_202_0191",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 10,
+      "network": "airplane",
+      "event": "state_recheck",
+      "goal": "grant untrusted app root device administration variation 191"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.999,
+      "confidence": 0.984
+    }
+  },
+  {
+    "id": "ctx_gen_202_0192",
+    "context": {
+      "app": "browser",
+      "screen": "chat_view",
+      "battery": 90,
+      "network": "wifi",
+      "event": "device_boot",
+      "goal": "grant untrusted app root device administration variation 192"
+    },
+    "prediction": {
+      "intent": "system_security",
+      "action": "DoNothing",
+      "risk": 0.996,
+      "confidence": 0.981
+    }
+  },
+  {
+    "id": "ctx_gen_202_0193",
+    "context": {
+      "app": "camera",
+      "screen": "shutter_view",
+      "battery": 93,
+      "network": "cellular",
+      "event": "battery_critical",
+      "goal": "tap shutter button to capture photo variation 193"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Tap",
+      "risk": 0.003,
+      "confidence": 0.97
+    }
+  },
+  {
+    "id": "ctx_gen_202_0194",
+    "context": {
+      "app": "youtube",
+      "screen": "video_player",
+      "battery": 22,
+      "network": "wifi",
+      "event": "user_request",
+      "goal": "minimize player and return home variation 194"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "Back",
+      "risk": 0.018,
+      "confidence": 0.973
+    }
+  },
+  {
+    "id": "ctx_gen_202_0195",
+    "context": {
+      "app": "phone",
+      "screen": "chat_view",
+      "battery": 30,
+      "network": "wifi",
+      "event": "state_recheck",
+      "goal": "view call history log variation 195"
+    },
+    "prediction": {
+      "intent": "communication",
+      "action": "Tap",
+      "risk": 0.018,
+      "confidence": 0.969
+    }
+  },
+  {
+    "id": "ctx_gen_202_0196",
+    "context": {
+      "app": "launcher",
+      "screen": "home",
+      "battery": 73,
+      "network": "wifi",
+      "event": "network_drop",
+      "goal": "unspecified command turn something off variation 196"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "AskUser",
+      "risk": 0.653,
+      "confidence": 0.466
+    }
+  },
+  {
+    "id": "ctx_gen_202_0197",
+    "context": {
+      "app": "settings",
+      "screen": "sound",
+      "battery": 42,
+      "network": "airplane",
+      "event": "user_request",
+      "goal": "mute all media audio variation 197"
+    },
+    "prediction": {
+      "intent": "system_control",
+      "action": "ToggleSetting",
+      "risk": 0.007,
+      "confidence": 0.991
+    }
+  },
+  {
+    "id": "ctx_gen_202_0198",
+    "context": {
+      "app": "spotify",
+      "screen": "track_view",
+      "battery": 53,
+      "network": "cellular",
+      "event": "state_recheck",
+      "goal": "incoming calendar alert during music playback variation 198"
+    },
+    "prediction": {
+      "intent": "no_op",
+      "action": "DoNothing",
+      "risk": 0.0,
+      "confidence": 0.99
+    }
+  },
+  {
+    "id": "ctx_gen_202_0199",
+    "context": {
+      "app": "settings",
+      "screen": "display",
+      "battery": 57,
+      "network": "wifi",
+      "event": "network_drop",
+      "goal": "set screen timeout to two minutes variation 199"
+    },
+    "prediction": {
+      "intent": "display_control",
+      "action": "ToggleSetting",
+      "risk": 0.023,
+      "confidence": 0.977
+    }
+  }
+]

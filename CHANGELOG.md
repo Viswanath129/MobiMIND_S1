@@ -2,6 +2,19 @@
 
 All notable changes to the MobiMIND-S1 project are documented here.
 
+## [v0.3] - 2026-09-23
+### Added
+- **E010**: Model capacity scaling experiments across 10M, 25M, and 50M parameter tiers on physical Snapdragon 6 Gen 4 hardware.
+- **E011**: Architecture ablation comparing Standard Transformer, ALBERT, MobileBERT, and MobiMIND Hybrid.
+- **E012**: Quantitative Pareto frontier mapping (Accuracy vs. Latency vs. Memory vs. Energy).
+- **Technical Report**: Published `docs/research/v0.3_capacity_scaling_report.md` detailing architecture design choices and findings.
+- **Benchmark Artifacts**: Added `benchmarks/runs/v0.3/` with comparison JSONs (`10m_comparison.json`, `25m_comparison.json`, `50m_comparison.json`) and 12 model configuration manifests.
+### Verified Findings
+- **MobiMIND Hybrid 25M** identified as Pareto-optimal configuration (96.3% accuracy, 22.40 ms P50 latency, 124 MB RAM, 2.69 mJ energy).
+- ALBERT cross-layer sharing exhibits a 21–53% latency penalty on mobile ARM CPUs compared to non-shared models due to memory cache hierarchy traversal.
+- MobileBERT linear bottlenecks provide 5–6% latency speedup with zero semantic accuracy degradation.
+- Gated depthwise 1D conv FFN blocks provide 18–21% speedup over standard Transformer FFNs.
+
 ## [v0.25] - 2026-09-23
 ### Added
 - **E005**: Fast-path hierarchy ablation (Level 0 deterministic rules bypass 32% of events with 0 ms model compute; Level 1 heuristics resolve 24%; composite cascade yields 0.045 ms decision latency).

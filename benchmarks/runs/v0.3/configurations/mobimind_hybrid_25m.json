@@ -1,0 +1,8 @@
+{
+  "family": "mobimind_hybrid",
+  "tier": "25m",
+  "parameters": 24536016,
+  "precision": "FP32",
+  "vocab_size": 8192,
+  "seq_len": 16
+}

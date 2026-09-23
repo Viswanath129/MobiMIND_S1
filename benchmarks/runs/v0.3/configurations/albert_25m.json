@@ -1,0 +1,8 @@
+{
+  "family": "albert",
+  "tier": "25m",
+  "parameters": 24849936,
+  "precision": "FP32",
+  "vocab_size": 8192,
+  "seq_len": 16
+}

@@ -1,0 +1,8 @@
+{
+  "family": "standard_transformer",
+  "tier": "25m",
+  "parameters": 25213456,
+  "precision": "FP32",
+  "vocab_size": 8192,
+  "seq_len": 16
+}

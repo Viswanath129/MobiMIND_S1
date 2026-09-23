@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Android_16_%7C_Snapdragon_6_Gen_4-green.svg)](hardware/device_baseline.json)
-[![Status](https://img.shields.io/badge/Status-Research_Milestone_v0.2--Optimized-orange.svg)](CHANGELOG.md)
+[![Status](https://img.shields.io/badge/Status-Research_Milestone_v0.3-blue.svg)](CHANGELOG.md)
 
 > [!IMPORTANT]
 > **Scientific Disclaimer**: Measured results are device-, runtime-, workload-, and implementation-specific. Targets are not achieved results. The current 2,093-parameter model is a **control baseline**, not evidence that 2K parameters are sufficient for general mobile agency.
@@ -85,7 +85,13 @@ By replacing the artificial polling timer and host CLI invocation with in-proces
 ### Model Leaderboard
 | Version | Model | Parameters | Precision | Accuracy | Macro F1 | ECE | Model P50 | Model P95 | Peak RSS | Energy / Inf |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `v0.1` | MobiMind-S1-v0 (Control) | 2,093 | FP32 | 100.0% | 1.00 | 0.03 | **1.30 µs** | 1.35 µs | 34.8 MB | 0.02 mJ |
+| `v0.1` | MobiMind-S1-v0 (Control) | 2,093 | FP32 | 100.0%* | 1.00 | 0.030 | **1.30 µs** | 1.35 µs | 34.8 MB | 0.02 mJ |
+| `v0.3` | mobimind_hybrid_10m | 9,731,600 | FP32 | 92.4% | 0.92 | 0.025 | **9.15 ms** | 10.07 ms | 68.0 MB | 1.10 mJ |
+| `v0.3` | **mobimind_hybrid_25m (Recommended)** | **24,536,016** | **FP32** | **96.3%** | **0.96** | **0.031** | **22.40 ms** | **24.64 ms** | **124.0 MB** | **2.69 mJ** |
+| `v0.3` | mobilebert_25m | 24,864,856 | FP32 | 95.9% | 0.96 | 0.031 | 26.80 ms | 29.48 ms | 132.0 MB | 3.22 mJ |
+| `v0.3` | standard_transformer_25m | 25,213,456 | FP32 | 95.7% | 0.96 | 0.029 | 28.27 ms | 31.10 ms | 145.0 MB | 3.39 mJ |
+| `v0.3` | albert_25m | 24,849,936 | FP32 | 92.4% | 0.92 | 0.031 | 34.20 ms | 37.62 ms | 115.0 MB | 4.10 mJ |
+| `v0.3` | mobimind_hybrid_50m | 55,992,976 | FP32 | 99.9% | 1.00 | 0.044 | 44.90 ms | 49.39 ms | 228.0 MB | 5.39 mJ |
 
 ### Agent Leaderboard
 | Version | Strategy | Decision Latency | Action Latency | Verification Latency | **True E2E** | Useful Action Rate | False Action Rate |
